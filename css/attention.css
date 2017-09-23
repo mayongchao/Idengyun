@@ -1,0 +1,124 @@
+.navScare {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navScare .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+.navScare .iconShare {
+  width: 0.8106666666666666rem;
+  float: right;
+  margin-right: 0.8533333333333334rem;
+}
+.shopList {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 2.986666666666667rem;
+}
+.shopList .shopItem {
+  font-size: 0.64rem;
+  color: #333333;
+  line-height: 2.1333333333333333rem;
+}
+.activeShowItem {
+  font-size: 0.64rem;
+  color: #ef508d!important;
+  border-bottom: 0.08533333333333333rem solid #ef508d;
+}
+.attenUserItem {
+  box-sizing: border-box;
+  padding: 1.0026666666666666rem 0.64rem;
+  border-bottom: 1px solid #EEEEEE;
+  position: relative;
+}
+.attenUserItem .attenHeader {
+  width: 1.92rem;
+  height: 1.92rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.attenUserItem .attenHeader img {
+  width: 100%;
+}
+.attenUserItem .ball {
+  display: inline-block;
+  width: 0.2986666666666667rem;
+  height: 0.2986666666666667rem;
+  border-radius: 50%;
+  background-color: #ef508d;
+  position: absolute;
+  top: 0.9386666666666666rem;
+  left: 2.3466666666666667rem;
+}
+.attenUserItem .attenText {
+  display: inline-block;
+  line-height: 0.8533333333333334rem;
+}
+.attenUserItem .attenText .textTop {
+  font-size: 0.64rem;
+  color: #333333;
+}
+.attenUserItem .attenText .textBot {
+  font-size: 0.5546666666666666rem;
+  color: #999999;
+}
+.attenUserItem .attention {
+  font-size: 0.4693333333333333rem;
+  color: #ef508d;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #ef508d;
+  display: inline-block;
+  float: right;
+  line-height: 0.8533333333333334rem;
+  width: 2.1333333333333333rem;
+  text-align: center;
+  margin-top: 0.64rem;
+}
+.attenUserItem .attention img {
+  width: 0.3413333333333333rem;
+}
+.attenUserItem .attentioned {
+  font-size: 0.4693333333333333rem;
+  color: #999999;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #dedede;
+  display: inline-block;
+  float: right;
+  line-height: 0.8533333333333334rem;
+  width: 2.432rem;
+  text-align: center;
+  margin-top: 0.64rem;
+}
+.attenUserItem .attentioned img {
+  width: 0.3413333333333333rem;
+}
+.attenUserItem .attenText .textTop img {
+  width: 0.5546666666666666rem;
+}
+.attenUserItem .attenText .textTop .level {
+  font-size: 0.512rem;
+  color: #ef508d;
+  margin-left: -0.21333333333333335rem;
+}

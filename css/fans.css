@@ -1,0 +1,65 @@
+body {
+  height: 4000px;
+}
+.navScare {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navScare .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+.navScare .iconShare {
+  width: 0.8106666666666666rem;
+  float: right;
+  margin-right: 0.8533333333333334rem;
+}
+.fansList {
+  margin-top: 3.2rem;
+}
+.fansList .fansItem {
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  font-size: 0.7253333333333334rem;
+  color: #333333;
+  line-height: 2.986666666666667rem;
+}
+.fansList .fansItem .line1px {
+  width: 100%;
+  height: 1px;
+  background-color: #EEEEEE;
+}
+.fansList .fansItem .fansHeader {
+  width: 1.92rem;
+  height: 1.92rem;
+  background: url("../images/fans01.png") center no-repeat;
+  background-size: cover;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.4266666666666667rem;
+}
+.fansList .fansItem img {
+  width: 0.5546666666666666rem;
+  margin-left: 0.4266666666666667rem;
+}
+.fansList .fansItem .level {
+  font-size: 0.512rem;
+  color: #ef508d;
+  margin-left: -0.21333333333333335rem;
+}

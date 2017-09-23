@@ -1,0 +1,130 @@
+@rem: 46.875rem;
+body {
+  height: 4000px;
+}
+//头部
+.navScare{
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navScare .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+.navScare .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}
+
+.shopList{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 140/@rem;
+}
+.shopList .shopItem{
+  font-size: 30/@rem;
+  color: #333333;
+  line-height: 100/@rem;
+  //font-weight: bold;
+}
+.activeShowItem{
+  //font-weight: bold;
+  font-size: 30/@rem;
+  color: #ef508d!important;
+  border-bottom: 4/@rem solid #ef508d;
+}
+//列表
+.collUserItem{
+  box-sizing: border-box;
+  padding: 40/@rem 30/@rem;
+  border-bottom: 10/@rem solid #ededed;
+}
+.collUserItem .collHeader{
+  width: 130/@rem;
+  height: 130/@rem;
+  background: url("../images/collectHeader.png") center no-repeat;
+  background-size: cover;
+  float: left;
+}
+.collUserItem .collText{
+  margin-left: 160/@rem;
+}
+.collUserItem .collText .textTop{
+  font-size: 30/@rem;
+  color: #1c1c1e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 40/@rem;
+}
+.collUserItem .collText .textBot{
+  display: inline-block;
+  font-size: 26/@rem;
+  color: #ef508d;
+  margin-top: 30/@rem;
+  //line-height: 60/@rem;
+}
+.collUserItem .collText .textBot img{
+  width: 24/@rem;
+}
+.collUserItem .collText .btnColl img{
+  width: 16/@rem;
+  vertical-align: middle;
+}
+//收藏
+.collUserItem .collText .btnColl{
+  display: inline-block;
+  width: 100/@rem;
+  height: 40/@rem;
+  text-align: center;
+  line-height: 40/@rem;
+  font-size: 22/@rem;
+  color: #ef508d;
+  border-radius: 20/@rem;
+  background-color: #ffffff;
+  border: 2/@rem solid #ef508d;
+  vertical-align: bottom;
+  float: right;
+  margin-top: 20/@rem;
+}
+//取消收藏
+.collUserItem .collText .noBtnColl{
+  display: inline-block;
+  width: 114/@rem;
+  height: 40/@rem;
+  text-align: center;
+  line-height: 40/@rem;
+  font-size: 22/@rem;
+  color: #999999;
+  border-radius: 20/@rem;
+  background-color: #ffffff;
+  border: 2/@rem solid #dedede;
+  vertical-align: bottom;
+  float: right;
+  margin-top: 20/@rem;
+}
+
+.collTime{
+  font-size: 26/@rem;
+  color: #999999!important;
+}

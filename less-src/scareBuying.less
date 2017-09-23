@@ -1,0 +1,209 @@
+@rem: 46.875rem;
+body {
+  //height: 4000px;
+}
+//抢购导航
+.navScare{
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+}
+.navScare .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navScare .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+.navScare .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}
+//************************************************
+//
+.scareList{
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 130/@rem;
+  //background-color: #bfa;
+  border-bottom: 1px solid #eeeeee;
+}
+.scareList .scareItem{
+  font-size: 30/@rem;
+  color: #666666;
+  line-height: 110/@rem;
+  margin-left: 80/@rem;
+  //font-weight: bold;
+}
+.scareList .scareItem:first-child{
+  margin-left: 50/@rem;
+}
+.activeShowItem{
+  //font-weight: bold;
+  font-size: 30/@rem;
+  color: #ef508d!important;
+  border-bottom: 4/@rem solid #ef508d;
+}
+
+//分割线
+/*.serverLine{
+  width: 100%;
+  height: 2/@rem;
+  background-color: #eeeeee;
+  margin: 40/@rem 0;
+}*/
+//抢购
+.scarebuy {
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+  //padding-bottom: 114/@rem;
+  //margin:0 40/@rem;
+  padding-top: 40/@rem;
+  padding-bottom: 40/@rem;
+  border-bottom: 10/@rem solid #F3F3F3;
+}
+
+.scarebuy .pro {
+  width: 220/@rem;
+  height: 220/@rem;
+  float: left;
+  overflow: hidden;
+}
+
+.scarebuy .pro img {
+  display: block;
+  width: 100%;
+}
+
+.scarebuy .message {
+  float: right;
+  font-size: 32/@rem;
+  color: #000000;
+}
+.scarebuy .message .num {
+  width: 230/@rem;
+  height: 24/@rem;
+  border-radius: 12/@rem;
+  background-color: #ffeff2;
+  border: 1px solid #ef508d;
+  line-height: 30/@rem;
+  text-align: center;
+  margin-top: 60/@rem;
+  position: relative;
+}
+
+.scarebuy .message .num p {
+  font-size: 20/@rem;
+  color: #ef508d;
+}
+//字体描边
+.scarebuy .message .num .textShadow{
+  text-shadow: 1px 0 0 #ffffff;
+}
+
+.scarebuy .message .num .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 26/@rem;
+  border-radius: 10/@rem;
+  background-color: #F270A1;
+  z-index: 0;
+  opacity: 0.5;
+}
+.scarebuy .message .top{
+  width: 450/@rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 32/@rem;
+  color: #000000;
+  line-height: 40/@rem;
+}
+.scarebuy .message .top span {
+  display: inline-block;
+  width: 60/@rem;
+  height: 34/@rem;
+  font-size: 24/@rem;
+  color: #ffffff;
+  background-color: #ef508d;
+  border-radius: 4px;
+  line-height: 34/@rem;
+  text-align: center;
+  margin-right: 5/@rem;
+}
+.price {
+  font-size: 0;
+  color: #ef508d;
+  margin-top: 10/@rem;
+}
+
+.price i {
+  font-style: normal;
+  font-size: 30/@rem;
+}
+
+.price .now {
+  font-size: 36/@rem;
+  margin-right: 20/@rem;
+}
+
+.price .old {
+  font-size: 26/@rem;
+  color: #bbbbbb;
+}
+
+.price .button {
+  width: 120/@rem;
+  height: 50/@rem;
+  font-size: 24/@rem;
+  color: #ffffff;
+  border-radius: 8/@rem;
+  background-color: #ef508d;
+  line-height: 50/@rem;
+  text-align: center;
+  float: right;
+  margin-top: -10/@rem;
+}
+.price .button-over,
+.price .button-scare-over{
+  width: 120/@rem;
+  height: 50/@rem;
+  font-size: 24/@rem;
+  color: #999999;
+  border-radius: 8/@rem;
+  background-color: #dddddd;
+  line-height: 50/@rem;
+  text-align: center;
+  float: right;
+  margin-top: -10/@rem;
+}
+.price .button-scare-time{
+  //width: 120/@rem;
+  height: 50/@rem;
+  font-size: 22/@rem;
+  color: #999999;
+  border-radius: 8/@rem;
+  background-color: #dddddd;
+  line-height: 50/@rem;
+  text-align: center;
+  float: right;
+  margin-top: -10/@rem;
+  padding-left: 10/@rem;
+  padding-right: 10/@rem;
+}

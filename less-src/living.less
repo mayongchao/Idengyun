@@ -1,0 +1,248 @@
+@rem: 46.875rem;
+body {
+  //height: 4000px;
+}
+.navSearch{
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+}
+.navSearch .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navSearch .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+/*.navSearch .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}*/
+.navSearch .input-group {
+  height: 60/@rem;
+  border-radius: 10/@rem;
+  position: relative;
+  display: inline-block;
+  margin-top: -40/@rem;
+  a {
+    position: absolute;
+    top: 14/@rem;
+    left: 20/@rem;
+    z-index: 100;
+    display: inline-block;
+    width: 32/@rem;
+    height: 30/@rem;
+    img {
+      width: 100%;
+    }
+  }
+  input {
+    width: 510/@rem;
+    height: 60/@rem;
+    font-size: 28/@rem;
+    color: #666;
+    border-radius: 10/@rem;
+    background-color: #EEEEEE;
+    text-indent: 62/@rem;
+    outline: none
+  }
+  input[type=text]::-webkit-input-placeholder {
+    font-size: 28/@rem;
+    color: #ccc;
+  }
+}
+
+//直播页面
+.float-right{
+  float: left;
+}
+
+
+
+
+.living{
+  width: 105/@rem;
+  height: 40/@rem;
+  border-radius: 20/@rem;
+  padding: 0 10/@rem;
+  background-color: #3e4750;
+  line-height: 40/@rem;
+  text-align: center;
+}
+.live-beautiful-content{
+  margin-top: 200/@rem;
+}
+.live-beautiful-content .living-icon{
+  width: 14/@rem;
+  height: 17/@rem;
+  background-size: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 6/@rem
+}
+.live-beautiful-content .header .liveText{
+  width: 100%;
+  font-size: 30/@rem;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+  //background-color: red;
+  position: absolute;
+  bottom: 30/@rem;
+}
+.live-beautiful-content .header .liveText .personImg{
+  float: right;
+  right: 0;
+}
+.live-beautiful-content .header .liveText .personImg img{
+  width: 30/@rem;
+  height: 30/@rem;
+  display: inline-block;
+  //margin: 0px 14/@rem 0 90/@rem ;
+}
+.living-icon1{
+  background: url('../images/icon_live1@2x.png') no-repeat;
+}
+.live-beautiful-content .living-text{
+  font-size: 22/@rem;
+  color: #ffffff;
+  vertical-align: top
+}
+.live-beautiful-content .living-description{
+  width: 100%;
+  font-size: 30/@rem;
+  color: #ffffff;
+  position: absolute;
+  //padding: 0 30/@rem;
+  bottom: 30/@rem
+}
+.live-beautiful-content .living-description .living-people{
+  width: 27/@rem;
+  height: 28/@rem;
+  background: url('../images/people.png') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-left: 90/@rem
+}
+.living-people1{
+
+}
+.living-description .float-right span{
+  margin: 0 30/@rem 0 14/@rem //psd图为30px 这里是50px!!!
+}
+.live-beautiful-content .swipTop{
+  margin-top: 30/@rem;
+  margin-bottom: 80/@rem;
+}
+.live-beautiful-content .swipBot{
+  margin-bottom: 24/@rem;
+}
+.live-beautiful-content .swip{
+  padding: 0 30/@rem 0 30/@rem;
+}
+.live-beautiful-content .swip li{
+  width: 335/@rem;
+  height: 335/@rem;
+  border-radius: 6/@rem;
+  float: left;
+  position: relative;
+  margin-bottom: 80/@rem;
+}
+.live-beautiful-content .swip li a{
+  display: inline-block;
+}
+.live-beautiful-content .swip li .livingMess{
+  font-size: 24/@rem;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  //margin-top: 24px;
+  margin-top: 24/@rem;
+  line-height: 26/@rem;
+}
+.live-beautiful-content .swip li .livingNum{
+  font-size: 24/@rem;
+  color: #ffffff;
+  //background-color: red;
+  position: absolute;
+  right: 10/@rem;
+  bottom: 20/@rem;
+}
+.live-beautiful-content .swip li .livingNum img{
+  width: 22/@rem;
+  height: 22/@rem;
+  margin-right: 10/@rem;
+}
+.live-beautiful-content .swip li .living2{
+  position: absolute;
+  top: 12/@rem;
+  right: 12/@rem;
+  width: 105/@rem;
+  height: 40/@rem;
+  border-radius: 20/@rem;
+  padding: 0 10/@rem;
+  background-color: #3e4750;
+  line-height: 40/@rem;
+  text-align: center;
+}
+.living-icon2{
+  background: url('../images/icon_live2@2x.png') no-repeat;
+}
+.live-beautiful-content .swip li:nth-child(odd){
+  margin-right: 20/@rem
+}
+.live-beautiful-content .swip li img{
+  height: 100%;
+  width: 100%
+}
+//预告
+.live-beautiful-content .swip li .foreshow{
+  position: absolute;
+  top: 12/@rem;
+  right: 12/@rem;
+  width: 70/@rem;
+  height: 40/@rem;
+  border-radius: 20/@rem;
+  padding: 0 10/@rem;
+  background-color: #3e4750;
+  line-height: 40/@rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.live-beautiful-content .foreshow-text{
+  font-size: 22/@rem;
+  color: #ffffff;
+  vertical-align: top
+}
+//回放
+.live-beautiful-content .swip li .playBack{
+  position: absolute;
+  top: 12/@rem;
+  right: 12/@rem;
+  width: 70/@rem;
+  height: 40/@rem;
+  border-radius: 20/@rem;
+  padding: 0 10/@rem;
+  background-color: #3e4750;
+  line-height: 40/@rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.live-beautiful-content .playBack-text{
+  font-size: 22/@rem;
+  color: #ffffff;
+  vertical-align: top
+}

@@ -1,0 +1,183 @@
+.navScare {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+}
+.navScare .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navScare .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+.navScare .iconShare {
+  width: 0.8106666666666666rem;
+  float: right;
+  margin-right: 0.8533333333333334rem;
+}
+.scareList {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2.7733333333333334rem;
+  border-bottom: 1px solid #eeeeee;
+}
+.scareList .scareItem {
+  font-size: 0.64rem;
+  color: #666666;
+  line-height: 2.3466666666666667rem;
+  margin-left: 1.7066666666666668rem;
+}
+.scareList .scareItem:first-child {
+  margin-left: 1.0666666666666667rem;
+}
+.activeShowItem {
+  font-size: 0.64rem;
+  color: #ef508d!important;
+  border-bottom: 0.08533333333333333rem solid #ef508d;
+}
+/*.serverLine{
+  width: 100%;
+  height: 2/@rem;
+  background-color: #eeeeee;
+  margin: 40/@rem 0;
+}*/
+.scarebuy {
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  padding-top: 0.8533333333333334rem;
+  padding-bottom: 0.8533333333333334rem;
+  border-bottom: 0.21333333333333335rem solid #f3f3f3;
+}
+.scarebuy .pro {
+  width: 4.693333333333333rem;
+  height: 4.693333333333333rem;
+  float: left;
+  overflow: hidden;
+}
+.scarebuy .pro img {
+  display: block;
+  width: 100%;
+}
+.scarebuy .message {
+  float: right;
+  font-size: 0.6826666666666666rem;
+  color: #000000;
+}
+.scarebuy .message .num {
+  width: 4.906666666666666rem;
+  height: 0.512rem;
+  border-radius: 0.256rem;
+  background-color: #ffeff2;
+  border: 1px solid #ef508d;
+  line-height: 0.64rem;
+  text-align: center;
+  margin-top: 1.28rem;
+  position: relative;
+}
+.scarebuy .message .num p {
+  font-size: 0.4266666666666667rem;
+  color: #ef508d;
+}
+.scarebuy .message .num .textShadow {
+  text-shadow: 1px 0 0 #ffffff;
+}
+.scarebuy .message .num .btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 0.5546666666666666rem;
+  border-radius: 0.21333333333333335rem;
+  background-color: #F270A1;
+  z-index: 0;
+  opacity: 0.5;
+}
+.scarebuy .message .top {
+  width: 9.6rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 0.6826666666666666rem;
+  color: #000000;
+  line-height: 0.8533333333333334rem;
+}
+.scarebuy .message .top span {
+  display: inline-block;
+  width: 1.28rem;
+  height: 0.7253333333333334rem;
+  font-size: 0.512rem;
+  color: #ffffff;
+  background-color: #ef508d;
+  border-radius: 4px;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+  margin-right: 0.10666666666666667rem;
+}
+.price {
+  font-size: 0;
+  color: #ef508d;
+  margin-top: 0.21333333333333335rem;
+}
+.price i {
+  font-style: normal;
+  font-size: 0.64rem;
+}
+.price .now {
+  font-size: 0.768rem;
+  margin-right: 0.4266666666666667rem;
+}
+.price .old {
+  font-size: 0.5546666666666666rem;
+  color: #bbbbbb;
+}
+.price .button {
+  width: 2.56rem;
+  height: 1.0666666666666667rem;
+  font-size: 0.512rem;
+  color: #ffffff;
+  border-radius: 0.17066666666666666rem;
+  background-color: #ef508d;
+  line-height: 1.0666666666666667rem;
+  text-align: center;
+  float: right;
+  margin-top: -0.21333333333333335rem;
+}
+.price .button-over,
+.price .button-scare-over {
+  width: 2.56rem;
+  height: 1.0666666666666667rem;
+  font-size: 0.512rem;
+  color: #999999;
+  border-radius: 0.17066666666666666rem;
+  background-color: #dddddd;
+  line-height: 1.0666666666666667rem;
+  text-align: center;
+  float: right;
+  margin-top: -0.21333333333333335rem;
+}
+.price .button-scare-time {
+  height: 1.0666666666666667rem;
+  font-size: 0.4693333333333333rem;
+  color: #999999;
+  border-radius: 0.17066666666666666rem;
+  background-color: #dddddd;
+  line-height: 1.0666666666666667rem;
+  text-align: center;
+  float: right;
+  margin-top: -0.21333333333333335rem;
+  padding-left: 0.21333333333333335rem;
+  padding-right: 0.21333333333333335rem;
+}

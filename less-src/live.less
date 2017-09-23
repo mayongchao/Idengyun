@@ -1,0 +1,121 @@
+@rem: 46.875rem;
+body{
+  //height: 1000px;
+}
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+body,html{
+  overflow: auto;
+}
+.clearfix {
+  zoom: 1;
+}
+.wrapper img{
+  width: 100%;
+}
+.liveRoom{
+  height: 80/@rem;
+  background-color: #ffffff;
+  font-size: 30/@rem;
+  color: #333333;
+  line-height: 80/@rem;
+  border-bottom: 1px solid #F3F3F3;
+}
+.liveRoom img{
+  width: 66/@rem;
+  vertical-align: middle;
+  margin-left: 30/@rem;
+  margin-right: 20/@rem;
+}
+.comment{
+  min-height: 650/@rem;
+  margin-top: 590/@rem;
+  background-color: #F3F3F3;
+  //height: 400px;
+  box-sizing: border-box;
+  padding: 5/@rem 106/@rem 120/@rem 30/@rem;
+  //position: relative;
+}
+//.comment li:first-child{
+//  margin-top: 0px;
+//  //margin-bottom: 68/@rem;
+//}
+.comment .commentText{
+  position: relative;
+  margin-top: 40/@rem;
+}
+.comment .commentText img{
+  width: 76/@rem;
+  //float: left;
+  //position: relative;
+  //vertical-align: middle;
+}
+.comment .commentText .text{
+
+  float: left;
+  font-size: 26/@rem;
+  color: #000000;
+  background-color: #ffffff;
+  //float: right;
+  margin-left: 96/@rem;
+  border-radius: 10/@rem;
+  box-sizing: border-box;
+  padding: 18/@rem;
+  //margin-top: 40/@rem;
+  display: inline-block;
+  //margin-top: 18/@rem;
+  position: absolute;
+  left: 0;
+  top: 18/@rem;
+  line-height: 35/@rem;
+}
+.send{
+  width: 100%;
+  background-color: #ffffff;
+  border-top: 1px solid #F3F3F3;
+  position: fixed;
+  bottom: 0;
+}
+.send span{
+  font-size: 30/@rem;
+  color: #ef508d;
+  margin-left: 0px;
+}
+.send input{
+  width: 600/@rem;
+  height: 66/@rem;
+  border-radius: 32/@rem;
+  background-color: #ebebeb;
+  color: #979797;
+  font-size: 13px;
+  margin-top: 12/@rem;
+  margin-bottom: 12/@rem;
+  margin-left: 30/@rem;
+  padding-left: 20/@rem;
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 10/@rem solid transparent;
+  border-right: 20/@rem solid #ffffff;
+  border-bottom: 10/@rem solid transparent;
+  position: absolute;
+  top: 24/@rem;
+  left: 88/@rem;
+}
+.wrapper .living{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+.wrapper .liveRoom{
+  position: fixed;
+  top: 509/@rem;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+}

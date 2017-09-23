@@ -1,0 +1,135 @@
+@rem: 46.875rem;
+body {
+  //height: 4000px;
+}
+//头部
+.navScare{
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navScare .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+.navScare .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}
+
+.shopList{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 140/@rem;
+}
+.shopList .shopItem{
+  font-size: 30/@rem;
+  color: #333333;
+  line-height: 100/@rem;
+  //font-weight: bold;
+}
+.activeShowItem{
+  //font-weight: bold;
+  font-size: 30/@rem;
+  color: #ef508d!important;
+  border-bottom: 4/@rem solid #ef508d;
+}
+//列表
+.attenUserItem{
+  box-sizing: border-box;
+  padding: 47/@rem 30/@rem;
+  border-bottom: 1px solid #EEEEEE;
+  position: relative;
+}
+.attenUserItem .attenHeader{
+  width: 90/@rem;
+  height: 90/@rem;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+}
+.attenUserItem .attenHeader img{
+  width: 100%;
+}
+.attenUserItem .ball{
+  display: inline-block;
+  width: 14/@rem;
+  height: 14/@rem;
+  border-radius: 50%;
+  background-color: #ef508d;
+  position: absolute;
+  top: 44/@rem;
+  left: 110/@rem;
+}
+.attenUserItem .attenText{
+  display: inline-block;
+  line-height: 40/@rem;
+}
+.attenUserItem .attenText .textTop{
+  font-size: 30/@rem;
+  color: #333333;
+}
+.attenUserItem .attenText .textBot{
+  font-size: 26/@rem;
+  color: #999999;
+}
+//关注
+.attenUserItem .attention{
+  font-size: 22/@rem;
+  color: #ef508d;
+  border-radius: 20/@rem;
+  background-color: #ffffff;
+  border: 2/@rem solid #ef508d;
+  display: inline-block;
+  float: right;
+  line-height: 40/@rem;
+  width: 100/@rem;
+  text-align: center;
+  margin-top: 30/@rem;
+}
+.attenUserItem .attention img{
+  width: 16/@rem;
+}
+//已关注
+.attenUserItem .attentioned{
+  font-size: 22/@rem;
+  color: #999999;
+  border-radius: 20/@rem;
+  background-color: #ffffff;
+  border: 2/@rem solid #dedede;
+  display: inline-block;
+  float: right;
+  line-height: 40/@rem;
+  width: 114/@rem;
+  text-align: center;
+  margin-top: 30/@rem;
+}
+.attenUserItem .attentioned img{
+  width: 16/@rem;
+}
+.attenUserItem .attenText .textTop img{
+  width: 26/@rem;
+}
+.attenUserItem .attenText .textTop .level{
+  font-size: 24/@rem;
+  color: #ef508d;
+  margin-left: -10/@rem;
+}

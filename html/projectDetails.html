@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>项目详情</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <!--需要修改引入对应的css-->
+    <link rel="stylesheet" href="../css/projectDetails.css">
+    <!--需要修改引入对应的css-->
+</head>
+<body>
+    <div class="proDeWrapper">
+        <!--项目详情导航栏-->
+        <div class="navShop">
+            <img src="../images/btn_nav_back_s@2x.png" alt="" class="iconBack">
+            <img src="../images/btn_nav_more_s@2x.png" alt="" class="iconMore">
+            <img src="../images/btn_nav_share_s@2x.png" alt="" class="iconShare">
+        </div>
+        <!--项目详情轮播图-->
+        <div class="swiper10 swiper-container">
+            <ul class="swiper-wrapper">
+                <li class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/projectDetailsImg.png" alt="">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/projectDetailsImg.png" alt="">
+                    </a>
+                </li>
+                <li class="swiper-slide">
+                    <a href="javascript:;">
+                        <img src="../images/projectDetailsImg.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+
+            <!-- 如果需要导航按钮 -->
+            <!--<div class="swiper-button-prev"></div>-->
+            <!--<div class="swiper-button-next"></div>-->
+
+            <!-- 如果需要滚动条 -->
+            <!--<div class="swiper-scrollbar"></div>-->
+        </div>
+        <!--项目详情信息-->
+        <div class="proDeMessage">
+            <p class="p1">
+                面部补水套餐标题限制两行，标题限制两行标制两 行标题限制两行标制两 行标题限制两行标制两 行，标题限制两行,面部补水套餐标题限制两行面...
+            </p>
+            <p class="p2">
+                肌肤健康水润机密畅想肌肤健康水润机标题限制两行标制两 行标题限制两行标制两 行密水润机水润密水润...
+            </p>
+            <p class="price">
+                <span class="money">¥</span>
+                998
+                <del class="oldPrice">
+                    ¥1689
+                </del>
+            </p>
+            <p class="city">
+                <span class="loaction">北京</span>...
+                <span class="moreCity">更多可用城市</span>
+            </p>
+            <p class="shopCar">
+                <img src="../images/icon_Purchasenumber@2x.png" alt="">
+                888
+            </p>
+        </div>
+        <!--付款方式-->
+        <ul class="payWay">
+           <li class="zhu">
+               <span class="fontZhu">注</span>
+               现在购买，只需要先支付预约金
+               <span class="nowPrice">
+                   ¥520.00
+               </span>
+           </li>
+            <li class="zeng">
+                <span class="fontZeng">赠</span>
+                <span class="zengBall"></span>
+                买商品送<span class="cloudMoney">300</span>云币
+            </li>
+            <li class="fen">
+                <span class="fontFen">分</span>
+                <span class="fenBall"></span>
+                首付预约金，尾款到店补
+            </li>
+        </ul>
+        <!--选择规格-->
+        <div class="bgColor">
+            <div class="redPacket">
+                <img src="../images/icon_Red@2x.png" alt="" class="redImg">
+                领取红包
+                <img src="../images/btn_right_jump@2x.png" alt="" class="btnRight">
+            </div>
+            <div class="selectGoods">
+                选择商品规格
+                <img src="../images/btn_right_jump@2x.png" alt="" class="btnRight">
+            </div>
+            <div class="label clearfix">
+                <span>隆鼻</span>
+                <span>自体脂肪</span>
+                <span>丰胸</span>
+                <span>自体脂肪填充</span>
+                <span>自体脂肪</span>
+                <span>美白</span>
+                <span>激光祛斑祛痘</span>
+                <span>减肥</span>
+                <span>美白祛斑</span>
+                <span>美白祛斑</span>
+            </div>
+        </div>
+        <!--大家都来说-->
+        <div class="everyBodySay">
+            <div class="commHeader">
+                大家都来说 (1)
+                <img src="../images/btn_right_jump@2x.png" alt="">
+            </div>
+            <div class="say">
+                <img src="../images/icon_return@2x.png" alt="">
+                这家店环境好么，技术怎么样？
+            </div>
+            <div class="return">
+                <img src="../images/icon_say@2x.png" alt="">
+                <div class="returnText">
+                    暂无回答
+                </div>
+
+            </div>
+        </div>
+        <!--查看更多-->
+        <div class="lookMore">
+            —— 继续拖动，查看更多 ——
+        </div>
+        <!--星星组件-->
+        <div class="starList" style="display: none">
+            <span class="startBg">
+                <span class="startInner" style="width: 100%"></span>
+            </span>
+        </div>
+        <!--tab页签导航-->
+        <ul class="DetailNav">
+            <li class="navItem activeShowItem">
+                商品详情
+            </li>
+            <li class="navItem">
+                相关案例
+            </li>
+            <li class="navItem">
+                看谁买了
+            </li>
+            <li class="navItem">
+                相关店铺
+            </li>
+        </ul>
+        <!--项目详情列表-->
+        <div class="DetailNavList">
+            <!--商品详情-->
+            <div class="goodsDetail" style="display: none">
+                <p class="goodsText">
+                    神奇！！专业技师亲自操作，眼角皱纹全无踪！
+                </p>
+                <p class="btnLookVideo">
+                    戳下方视频观看
+                    <img src="../images/jiantou@2x.png" alt="">
+                </p>
+                <div class="video">
+                    <span class="playBack">
+                        回放
+                    </span>
+                    <img src="../images/play.png" alt="">
+                </div>
+                <div class="goodsIntroduce">
+                    <img src="../images/introduceImg.png" alt="">
+                </div>
+            </div>
+            <!--相关案例-->
+            <ul class="proCase" style="display: none">
+                <li class="userList">
+                    <div class="userHeader clearfix">
+                        <div class="userImg">
+                            <img src="../images/userImg01.png" alt="">
+                        </div>
+                        <p class="userMessage">
+                            天使BABY
+                            <img src="../images/icon_grade-level@2x.png" alt="">
+
+                            <span class="levelNum">
+                2
+            </span>
+                        </p>
+                        <p class="userText">
+                            一分钟前
+                        </p>
+                        <div class="follow">
+            <span class="followImg">
+                <img src="../images/btn_one_n@2x.png" alt="">
+            </span>
+                            <span class="fllowTest">关注</span>
+                        </div>
+                    </div>
+                    <div class="userPhoto clearfix">
+                        <div class="left">
+                            <div class="before">
+                                Before
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="after">
+                                After
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userComment">
+                        不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
+                    </div>
+                    <div class="userPro">
+                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
+                        <span class="iconCom"></span>
+                        <span class="userProName">
+            泰妍雅集丰韵套装
+        </span>
+                    </div>
+                    <div class="attention">
+                        <div class="view">
+                            <!--<span class="viewImg"></span>-->
+                            <img src="../images/icon_browse@2x.png" alt="">
+                            <span class="viewNum">
+                    2.16万
+                </span>
+                        </div>
+                        <div class="support">
+                            <!--<span class="viewImg"></span>-->
+                            <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
+                            <span class="viewNum">
+                    2.16万
+                </span>
+                        </div>
+                        <div class="comment">
+                            <!--<span class="viewImg"></span>-->
+                            <img src="../images/icon_comment@2x.png" alt="">
+                            <span class="viewNum">
+                    2.16万
+                </span>
+                        </div>
+                    </div>
+                </li>
+                <li class="userList">
+                    <div class="userHeader clearfix">
+                        <div class="userImg">
+                            <img src="../images/userImg01.png" alt="">
+                        </div>
+                        <p class="userMessage">
+                            天使BABY
+                            <img src="../images/icon_grade-level@2x.png" alt="">
+
+                            <span class="levelNum">
+                2
+            </span>
+                        </p>
+                        <p class="userText">
+                            一分钟前
+                        </p>
+                        <div class="follow">
+            <span class="followImg">
+                <img src="../images/btn_one_n@2x.png" alt="">
+            </span>
+                            <span class="fllowTest">关注</span>
+                        </div>
+                    </div>
+                    <div class="userPhoto clearfix">
+                        <div class="left">
+                            <div class="before">
+                                Before
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="after">
+                                After
+                            </div>
+                        </div>
+                    </div>
+                    <div class="userComment">
+                        不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
+                    </div>
+                    <div class="userPro">
+                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
+                        <span class="iconCom"></span>
+                        <span class="userProName">
+            泰妍雅集丰韵套装
+        </span>
+                    </div>
+                    <div class="attention">
+                        <div class="view">
+                            <!--<span class="viewImg"></span>-->
+                            <img src="../images/icon_browse@2x.png" alt="">
+                            <span class="viewNum">
+                    2.16万
+                </span>
+                        </div>
+                        <div class="support">
+                            <!--<span class="viewImg"></span>-->
+                            <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
+                            <span class="viewNum">
+                    2.16万
+                </span>
+                        </div>
+                        <div class="comment">
+                            <!--<span class="viewImg"></span>-->
+                            <img src="../images/icon_comment@2x.png" alt="">
+                            <span class="viewNum">
+                    2.16万
+                </span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--看谁买了-->
+            <ul class="whoBuyList" style="display: none">
+                <li class="whoBuyItem">
+                    <div class="userListHeader">
+                        <div class="userHeader clearfix">
+                            <div class="userImg">
+                                <img src="../images/customer01.png" alt="">
+                            </div>
+                            <p class="userMessage">
+                                Bridge
+                                <img src="../images/icon_grade-level@2x.png" alt="">
+
+                                <span class="levelNum">
+                    2
+                </span>
+                            </p>
+                            <p class="userText">
+                                2017-08-25  18:20
+                            </p>
+                            <ul class="starList">
+                                <span class="startBg">
+                                    <span class="startInner" style="width: 50%"></span>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="buyText">
+                        不知道现在的天是怎么了，怎么感觉那么冷啊，现在买 这个超级好用的啊，不知道现在的天是怎么了，怎么感 觉那么冷啊，大赞，大赞！！
+                    </p>
+                    <ul class="imageShow clearfix">
+                       <li class="imageItem">
+                           <img src="../images/imageShow01.png" alt="">
+                       </li>
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="reply">
+                        <div class="replyContent">
+                            <div class="triangle"></div>
+                            <p class="replyText">
+                                客服回复：谢谢亲的支持，每天美耶一直努力让您一直努力让您一直努力让您一直努力让您一直努力让您开心快 乐并幸福~~o(*￣▽￣*)ブ
+                            </p>
+                            <p class="replyTime">
+                                2016-12-12
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="whoBuyItem">
+                    <div class="userListHeader">
+                        <div class="userHeader clearfix">
+                            <div class="userImg">
+                                <img src="../images/customer01.png" alt="">
+                            </div>
+                            <p class="userMessage">
+                                Bridge
+                                <img src="../images/icon_grade-level@2x.png" alt="">
+
+                                <span class="levelNum">
+                    2
+                </span>
+                            </p>
+                            <p class="userText">
+                                2017-08-25  18:20
+                            </p>
+                            <ul class="starList">
+                                <span class="startBg">
+                                    <span class="startInner" style="width: 50%"></span>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="buyText">
+                        不知道现在的天是怎么了，怎么感觉那么冷啊，现在买 这个超级好用的啊，不知道现在的天是怎么了，怎么感 觉那么冷啊，大赞，大赞！！
+                    </p>
+                    <ul class="imageShow clearfix">
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="reply">
+                        <div class="replyContent">
+                            <div class="triangle"></div>
+                            <p class="replyText">
+                                客服回复：谢谢亲的支持，每天美耶一直努力让您一直努力让您一直努力让您一直努力让您一直努力让您开心快 乐并幸福~~o(*￣▽￣*)ブ
+                            </p>
+                            <p class="replyTime">
+                                2016-12-12
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li class="whoBuyItem">
+                    <div class="userListHeader">
+                        <div class="userHeader clearfix">
+                            <div class="userImg">
+                                <img src="../images/customer01.png" alt="">
+                            </div>
+                            <p class="userMessage">
+                                Bridge
+                                <img src="../images/icon_grade-level@2x.png" alt="">
+
+                                <span class="levelNum">
+                    2
+                </span>
+                            </p>
+                            <p class="userText">
+                                2017-08-25  18:20
+                            </p>
+                            <ul class="starList">
+                                <span class="startBg">
+                                    <span class="startInner" style="width: 50%"></span>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="buyText">
+                        不知道现在的天是怎么了，怎么感觉那么冷啊，现在买 这个超级好用的啊，不知道现在的天是怎么了，怎么感 觉那么冷啊，大赞，大赞！！
+                    </p>
+                    <ul class="imageShow clearfix">
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                        <li class="imageItem">
+                            <img src="../images/imageShow01.png" alt="">
+                        </li>
+                    </ul>
+                    <div class="reply">
+                        <div class="replyContent">
+                            <div class="triangle"></div>
+                            <p class="replyText">
+                                客服回复：谢谢亲的支持，每天美耶一直努力让您一直努力让您一直努力让您一直努力让您一直努力让您开心快 乐并幸福~~o(*￣▽￣*)ブ
+                            </p>
+                            <p class="replyTime">
+                                2016-12-12
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!--相关店铺-->
+            <ul class="shopDetail" style="display: block">
+                <li class="shopItem">
+                    <div class="shopImage">
+                        <img src="../images/shopImage.png" alt="">
+                    </div>
+                    <div class="shopItemMess">
+                        <p class="shopItemText">
+                            北京通州万达可诺丹婷店北京通州万达可诺丹婷店
+                        </p>
+                        <p class="shopItemGrade">
+                            服务人次：<span class="numPerson">345</span>综合评价:<span class="grade">5.0分</span>
+                        </p>
+                    </div>
+                    <div class="shopAdress">
+                        <p class="adress">
+                            地址: 北京市通州区万达广场A区167号
+                        </p>
+                        <div class="adAndTel">
+                            <img src="../images/btn_icon_adress@2x.png" alt="">
+                            <span class="verticalLine"></span>
+                            <img src="../images/btn_icon_iphone@2x.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="shopItem">
+                    <div class="shopImage">
+                        <img src="../images/shopImage.png" alt="">
+                    </div>
+                    <div class="shopItemMess">
+                        <p class="shopItemText">
+                            北京通州万达可诺丹婷店北京通州万达可诺丹婷店
+                        </p>
+                        <p class="shopItemGrade">
+                            服务人次：<span class="numPerson">345</span>综合评价:<span class="grade">5.0分</span>
+                        </p>
+                    </div>
+                    <div class="shopAdress">
+                        <p class="adress">
+                            地址: 北京市通州区万达广场A区167号
+                        </p>
+                        <div class="adAndTel">
+                            <img src="../images/btn_icon_adress@2x.png" alt="">
+                            <span class="verticalLine"></span>
+                            <img src="../images/btn_icon_iphone@2x.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="shopItem">
+                    <div class="shopImage">
+                        <img src="../images/shopImage.png" alt="">
+                    </div>
+                    <div class="shopItemMess">
+                        <p class="shopItemText">
+                            北京通州万达可诺丹婷店北京通州万达可诺丹婷店
+                        </p>
+                        <p class="shopItemGrade">
+                            服务人次：<span class="numPerson">345</span>综合评价:<span class="grade">5.0分</span>
+                        </p>
+                    </div>
+                    <div class="shopAdress">
+                        <p class="adress">
+                            地址: 北京市通州区万达广场A区167号
+                        </p>
+                        <div class="adAndTel">
+                            <img src="../images/btn_icon_adress@2x.png" alt="">
+                            <span class="verticalLine"></span>
+                            <img src="../images/btn_icon_iphone@2x.png" alt="">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+        <!--加载完毕追加底部内容-->
+        <div class="bottomLoading">
+            好棒，内容都被你看光光了～
+        </div>
+        <!--预约金-->
+        <div class="reserve">
+            预约金:<span class="redMoney">¥</span><span class="redNum">100.00</span>到店付:<span class="grayMoney">¥</span><span class="grayNum">900.00</span>
+            <span class="informImg"><img src="../images/informIcon.png" alt=""></span>
+        </div>
+        <!--项目详情页footer-->
+        <div class="footer">
+            <div class="consult">
+                <img src="../images/consultIcon.png" alt="">
+                在线咨询
+            </div>
+            <div class="collect">
+                <img src="../images/btn_icon_collected@2x.png" alt="">
+                收藏
+            </div>
+            <div class="buyNow">
+                立即购买
+            </div>
+        </div>
+        <!--goTop-->
+        <div class="goTop">
+            <img src="../images/btn_Back-to-the-top@2x.png" alt="">
+        </div>
+        <!-- sku虚拟属性弹层 -->
+        <input type="hidden" id="countTotal" value="10000">
+        <div class="cheap-detail sku-detail" id="cheap-detail">
+            <div class="property-closed virtualSkuHeadcss" style="position: absolute;width: 25px;height: 14px;top: 12px;background-size: 14px;z-index:12;"></div>
+            <div class="property-head" style="padding: 0px 12px;">
+                <img src="http://resource.idengyun.com/resource/2016/08/a562b1d6-66c8-48ca-82cc-92a444efd6d7.jpg" alt="" class="property-pic">
+                <p class="price-num">88000</p>
+                <p>￥<span class="stock-num" id="selectTotal">88000</span></p>
+            </div>
+            <div class="property-main">
+                <div class="scroller">
+                    <div>
+                        <input type="hidden" id="ks" shopprice="88000" value="88000">
+                        <h3 style="margin-top: 30px;">选择商品规格</h3>
+                        <div style="margin-top: 20px; height: 300px">
+                            <button class="attr-item virtualSkuCss" id="s0" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s1" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s2" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s3" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s4" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s5" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s3" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s4" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s5" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s3" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s4" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s5" key="711">190ml精油</button>
+
+
+                            <input type="hidden" id="ks0" sprice="88000" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--sku弹层遮罩-->
+        <div class="supernatant"></div>
+        <!-- 红包弹层 -->
+        <div class="coupon-detail">
+            <div class="content">
+                <div class="property-closed"></div>
+                <div class="property-head">领取优惠券:</div>
+                <div class="property-main">
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+                    <div class="coupon-item">
+                        <h4>10元</h4>
+                        <p>全场使用无限额</p>
+                        <p>有效期至：2016-12-31</p>
+                        <button>立即领取</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript" src="../js/rem.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+<!--<script type="text/javascript" src="../js/active.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function () {
+        var mySwiper10 = new Swiper('.swiper10', {
+            direction: 'horizontal',
+            loop: true,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+
+            // 如果需要前进后退按钮
+//            nextButton: '.swiper-button-next',
+//            prevButton: '.swiper-button-prev',
+
+            // 如果需要滚动条
+//            scrollbar: '.swiper-scrollbar',
+        })
+
+        var navTop = $('.DetailNav').offset().top
+       /* console.log(navTop.offset().top)
+        console.log($('.DetailNav').offset().top)*/
+       console.log(navTop)
+        $(window).scroll(function () {
+            var top = $(window).scrollTop()
+            console.log(top)
+            if(top > navTop){
+//                alert('hello')
+                $('.DetailNav').css({'position':'fixed','top':'0','left':'0'})
+            }else if(navTop>top){
+                $('.DetailNav').css({'position':'static'})
+            }
+
+        })
+
+
+
+
+
+
+        goTop()
+        tabNav()
+        // 弹出组合层
+        skuOpen()
+        skuClose()
+        redPacketOpen()
+        redPacketClose()
+        function redPacketOpen() {
+            //        红包
+            $('.redPacket').click(function () {
+                $('.coupon-detail').addClass('show');
+            })
+            //领取红包
+            $('.coupon-item>button').click(function () {
+                $(this).attr({disabled:'disabled'}).html('已领取')
+            })
+        }
+        function redPacketClose(){
+            //        红包
+            $('.coupon-detail .property-closed,.supernatant').click(function(){
+                $('.coupon-detail').removeClass('show');
+
+//            $('.cover-decision').remove();
+            });
+        }
+        function goTop() {
+            $('.goTop').click(function () {
+                $(document).scrollTop(0);
+            })
+        }
+//        通用切换
+        function tabNav() {
+            $('.navItem').click(function () {
+                $(this).siblings().removeClass('activeShowItem')
+                $(this).addClass('activeShowItem')
+                var index = $(this).index()
+                $('.DetailNavList').children().hide().eq(index).show()
+            })
+        }
+        function skuOpen() {
+            //        规格
+            $('.selectGoods').click(function(){
+                $('.sku-detail').addClass('show');
+                $('.supernatant').addClass('cover-decision')
+                $('body').append('<div class="cover-decision"></div>');
+            });
+            //选择规格
+            $('.attr-item').click(function () {
+                $(this).css({'color':'rgb(239, 80, 141)','border-color':'rgb(239, 80, 141)','outline':'none'})
+            })
+        }
+        function skuClose() {
+            // 关闭组合层
+            $('.sku-detail .property-closed, .cover-decision').click(function(){
+                $('.sku-detail').removeClass('show');
+                $('.cover-decision').remove();
+            });
+        }
+
+    })
+</script>
+</body>
+</html>

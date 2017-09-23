@@ -1,0 +1,120 @@
+body {
+  height: 4000px;
+}
+.navScare {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navScare .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+.navScare .iconShare {
+  width: 0.8106666666666666rem;
+  float: right;
+  margin-right: 0.8533333333333334rem;
+}
+.shopList {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 2.986666666666667rem;
+}
+.shopList .shopItem {
+  font-size: 0.64rem;
+  color: #333333;
+  line-height: 2.1333333333333333rem;
+}
+.activeShowItem {
+  font-size: 0.64rem;
+  color: #ef508d!important;
+  border-bottom: 0.08533333333333333rem solid #ef508d;
+}
+.collUserItem {
+  box-sizing: border-box;
+  padding: 0.8533333333333334rem 0.64rem;
+  border-bottom: 0.21333333333333335rem solid #ededed;
+}
+.collUserItem .collHeader {
+  width: 2.7733333333333334rem;
+  height: 2.7733333333333334rem;
+  background: url("../images/collectHeader.png") center no-repeat;
+  background-size: cover;
+  float: left;
+}
+.collUserItem .collText {
+  margin-left: 3.4133333333333336rem;
+}
+.collUserItem .collText .textTop {
+  font-size: 0.64rem;
+  color: #1c1c1e;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  line-height: 0.8533333333333334rem;
+}
+.collUserItem .collText .textBot {
+  display: inline-block;
+  font-size: 0.5546666666666666rem;
+  color: #ef508d;
+  margin-top: 0.64rem;
+}
+.collUserItem .collText .textBot img {
+  width: 0.512rem;
+}
+.collUserItem .collText .btnColl img {
+  width: 0.3413333333333333rem;
+  vertical-align: middle;
+}
+.collUserItem .collText .btnColl {
+  display: inline-block;
+  width: 2.1333333333333333rem;
+  height: 0.8533333333333334rem;
+  text-align: center;
+  line-height: 0.8533333333333334rem;
+  font-size: 0.4693333333333333rem;
+  color: #ef508d;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #ef508d;
+  vertical-align: bottom;
+  float: right;
+  margin-top: 0.4266666666666667rem;
+}
+.collUserItem .collText .noBtnColl {
+  display: inline-block;
+  width: 2.432rem;
+  height: 0.8533333333333334rem;
+  text-align: center;
+  line-height: 0.8533333333333334rem;
+  font-size: 0.4693333333333333rem;
+  color: #999999;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #dedede;
+  vertical-align: bottom;
+  float: right;
+  margin-top: 0.4266666666666667rem;
+}
+.collTime {
+  font-size: 0.5546666666666666rem;
+  color: #999999!important;
+}

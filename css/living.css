@@ -1,0 +1,228 @@
+.navSearch {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+}
+.navSearch .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navSearch .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+/*.navSearch .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}*/
+.navSearch .input-group {
+  height: 1.28rem;
+  border-radius: 0.21333333333333335rem;
+  position: relative;
+  display: inline-block;
+  margin-top: -0.8533333333333334rem;
+}
+.navSearch .input-group a {
+  position: absolute;
+  top: 0.2986666666666667rem;
+  left: 0.4266666666666667rem;
+  z-index: 100;
+  display: inline-block;
+  width: 0.6826666666666666rem;
+  height: 0.64rem;
+}
+.navSearch .input-group a img {
+  width: 100%;
+}
+.navSearch .input-group input {
+  width: 10.88rem;
+  height: 1.28rem;
+  font-size: 0.5973333333333334rem;
+  color: #666;
+  border-radius: 0.21333333333333335rem;
+  background-color: #EEEEEE;
+  text-indent: 1.3226666666666667rem;
+  outline: none;
+}
+.navSearch .input-group input[type=text]::-webkit-input-placeholder {
+  font-size: 0.5973333333333334rem;
+  color: #ccc;
+}
+.float-right {
+  float: left;
+}
+.living {
+  width: 2.24rem;
+  height: 0.8533333333333334rem;
+  border-radius: 0.4266666666666667rem;
+  padding: 0 0.21333333333333335rem;
+  background-color: #3e4750;
+  line-height: 0.8533333333333334rem;
+  text-align: center;
+}
+.live-beautiful-content {
+  margin-top: 4.266666666666667rem;
+}
+.live-beautiful-content .living-icon {
+  width: 0.2986666666666667rem;
+  height: 0.3626666666666667rem;
+  background-size: 100%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.128rem;
+}
+.live-beautiful-content .header .liveText {
+  width: 100%;
+  font-size: 0.64rem;
+  color: #ffffff;
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  position: absolute;
+  bottom: 0.64rem;
+}
+.live-beautiful-content .header .liveText .personImg {
+  float: right;
+  right: 0;
+}
+.live-beautiful-content .header .liveText .personImg img {
+  width: 0.64rem;
+  height: 0.64rem;
+  display: inline-block;
+}
+.living-icon1 {
+  background: url('../images/icon_live1@2x.png') no-repeat;
+}
+.live-beautiful-content .living-text {
+  font-size: 0.4693333333333333rem;
+  color: #ffffff;
+  vertical-align: top;
+}
+.live-beautiful-content .living-description {
+  width: 100%;
+  font-size: 0.64rem;
+  color: #ffffff;
+  position: absolute;
+  bottom: 0.64rem;
+}
+.live-beautiful-content .living-description .living-people {
+  width: 0.576rem;
+  height: 0.5973333333333334rem;
+  background: url('../images/people.png') no-repeat;
+  background-size: 100%;
+  display: inline-block;
+  margin-left: 1.92rem;
+}
+.living-description .float-right span {
+  margin: 0 0.64rem 0 0.2986666666666667rem;
+}
+.live-beautiful-content .swipTop {
+  margin-top: 0.64rem;
+  margin-bottom: 1.7066666666666668rem;
+}
+.live-beautiful-content .swipBot {
+  margin-bottom: 0.512rem;
+}
+.live-beautiful-content .swip {
+  padding: 0 0.64rem 0 0.64rem;
+}
+.live-beautiful-content .swip li {
+  width: 7.1466666666666665rem;
+  height: 7.1466666666666665rem;
+  border-radius: 0.128rem;
+  float: left;
+  position: relative;
+  margin-bottom: 1.7066666666666668rem;
+}
+.live-beautiful-content .swip li a {
+  display: inline-block;
+}
+.live-beautiful-content .swip li .livingMess {
+  font-size: 0.512rem;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 0.512rem;
+  line-height: 0.5546666666666666rem;
+}
+.live-beautiful-content .swip li .livingNum {
+  font-size: 0.512rem;
+  color: #ffffff;
+  position: absolute;
+  right: 0.21333333333333335rem;
+  bottom: 0.4266666666666667rem;
+}
+.live-beautiful-content .swip li .livingNum img {
+  width: 0.4693333333333333rem;
+  height: 0.4693333333333333rem;
+  margin-right: 0.21333333333333335rem;
+}
+.live-beautiful-content .swip li .living2 {
+  position: absolute;
+  top: 0.256rem;
+  right: 0.256rem;
+  width: 2.24rem;
+  height: 0.8533333333333334rem;
+  border-radius: 0.4266666666666667rem;
+  padding: 0 0.21333333333333335rem;
+  background-color: #3e4750;
+  line-height: 0.8533333333333334rem;
+  text-align: center;
+}
+.living-icon2 {
+  background: url('../images/icon_live2@2x.png') no-repeat;
+}
+.live-beautiful-content .swip li:nth-child(odd) {
+  margin-right: 0.4266666666666667rem;
+}
+.live-beautiful-content .swip li img {
+  height: 100%;
+  width: 100%;
+}
+.live-beautiful-content .swip li .foreshow {
+  position: absolute;
+  top: 0.256rem;
+  right: 0.256rem;
+  width: 1.4933333333333334rem;
+  height: 0.8533333333333334rem;
+  border-radius: 0.4266666666666667rem;
+  padding: 0 0.21333333333333335rem;
+  background-color: #3e4750;
+  line-height: 0.8533333333333334rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.live-beautiful-content .foreshow-text {
+  font-size: 0.4693333333333333rem;
+  color: #ffffff;
+  vertical-align: top;
+}
+.live-beautiful-content .swip li .playBack {
+  position: absolute;
+  top: 0.256rem;
+  right: 0.256rem;
+  width: 1.4933333333333334rem;
+  height: 0.8533333333333334rem;
+  border-radius: 0.4266666666666667rem;
+  padding: 0 0.21333333333333335rem;
+  background-color: #3e4750;
+  line-height: 0.8533333333333334rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.live-beautiful-content .playBack-text {
+  font-size: 0.4693333333333333rem;
+  color: #ffffff;
+  vertical-align: top;
+}

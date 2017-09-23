@@ -1,0 +1,569 @@
+@rem: 46.875rem;
+body {
+  //height: 4000px;
+}
+.clearfix:after,
+.clearfix:before{
+  content: "";
+  display: block;
+  clear: both;
+  /*height: 0;*/
+  overflow: hidden;
+}
+.clearfix{
+  zoom: 1;
+}
+//个人主页导航
+.navShop{
+  //background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  //border-bottom: 1px solid #eeeeee;
+
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+  color: #ffffff;
+
+}
+.navShop .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navShop .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+.navShop .iconShare{
+  position: absolute;
+  width: 38/@rem;
+  //float: right;
+  margin-right: 40/@rem;
+  top: 60/@rem;
+  right: 80/@rem;
+}
+//个人主页
+.personHome{
+  position: relative;
+  border-bottom: 20/@rem solid #f3f3f3;
+}
+.personHome .personPage{
+  width: 100%;
+  height: 550/@rem;
+  background: url("../images/personalHome.jpg") center no-repeat;
+  background-size: 100%;
+  filter: blur(5px);
+}
+.personHome .shade{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  //opacity: 0.5;
+  //color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.personHome .shade .personHeader{
+  width: 150/@rem;
+  height: 150/@rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 150/@rem;
+  overflow: hidden;
+  background: url("../images/personalHome.jpg") center no-repeat;
+  background-size: cover;
+}
+.personHome .shade .personName{
+  font-size: 28/@rem;
+  color: #ffffff;
+  margin-top: 20/@rem;
+}
+.personHome .shade .personName .gender{
+  width: 25/@rem;
+  vertical-align: middle;
+}
+.personHome .shade .personName .level{
+  width: 27/@rem;
+  vertical-align: baseline;
+}
+.personHome .shade .personName span{
+  font-size: 24/@rem;
+  color: #ef508d;
+  margin-top: 0px;
+  margin-left: -10/@rem;
+}
+.personHome .shade .personFollow{
+  display: inline-block;
+  width: 116/@rem;
+  height: 40/@rem;
+  border-radius: 8/@rem;
+  border: 1px solid #ffffff;
+  line-height: 45/@rem;
+  text-align: center;
+  font-size: 24/@rem;
+  color: #ffffff;
+  margin-top: 30/@rem;
+}
+.personHome .shade .personFollow img{
+  width: 16/@rem;
+  vertical-align: middle;
+  margin-top: -5/@rem;
+}
+
+.shopMessage{
+  display: flex;
+  justify-content:space-around;
+  margin-top: 40/@rem;
+}
+.shopMessage .shopItem .number{
+  margin-bottom: 14/@rem;
+  font-size: 36/@rem;
+  color: #ffffff;
+  //font-weight: bold;
+}
+.shopMessage .shopItem .text{
+  font-size: 26/@rem;
+  color: #ffffff;
+}
+.shopMessage .shopItem .line{
+  width: 1/@rem;
+  height: 24/@rem;
+  background-color: #DCDCDC;
+  margin-top: 35/@rem;
+}
+.shopMessage .shopItem p{
+  font-size: 36/@rem;
+  color: #666666;
+  text-align: center;
+}
+
+//文章与日记Header
+.shopList{
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid #eeeeee;
+}
+.shopList .shopItem{
+  font-size: 30/@rem;
+  color: #333333;
+  line-height: 100/@rem;
+  //font-weight: bold;
+}
+.activeShowItem{
+  //font-weight: bold;
+  font-size: 30/@rem;
+  color: #ef508d!important;
+  border-bottom: 4/@rem solid #ef508d;
+}
+//日记
+.userList{
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+}
+.userList .userHeader{
+  //background-color: #bfa;
+  position: relative;
+  //box-sizing: border-box;
+  //padding: 0 30/@rem;
+  margin-top: 40/@rem;
+}
+.userList .userHeader .userImg{
+  width: 60/@rem;
+  height: 60/@rem;
+  border-radius: 50%;
+  background-image: url("../images/userImg01.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+.userList .userHeader .userMessage{
+  font-size: 28/@rem;
+  color: #363636;
+  font-weight: bold;
+  line-height: 28/@rem;
+  margin-left: 80/@rem;
+  margin-bottom: 10/@rem;
+}
+
+.userList .userHeader .userMessage img{
+  width: 25/@rem;
+  height: 25/@rem;
+  //width: 100%;
+  vertical-align: top;
+}
+.userList .userHeader .userMessage .levelNum{
+  color: #ef508d;
+  font-size: 24/@rem;
+  font-weight: bold;
+  margin-left: -6px;
+}
+.userList .userHeader .userText{
+  font-size: 28/@rem;
+  color:#999999 ;
+  margin-left: 80/@rem;
+}
+.userList .userHeader .follow{
+  width: 100/@rem;
+  height: 40/@rem;
+  border-radius: 50/@rem;
+  //float: right;
+  //background-color: #bfa;
+  font-size: 22/@rem;
+  color: #ef508d;
+  position: absolute;
+  right: 0/@rem;
+  top: 10/@rem;
+  border: 1px solid #ef508d;
+  line-height: 40/@rem;
+  text-align: center;
+
+}
+.userList .userHeader .follow .followImg{
+  width: 16/@rem;
+  height: 16/@rem;
+  display: inline-block;
+  //line-height: 100/@rem;
+
+}
+.userList .userHeader .follow .followImg img{
+  width: 100%;
+  vertical-align: baseline;
+}
+.userList .userPhoto{
+  //box-sizing: border-box;
+  //padding: 0 30/@rem;
+  margin-top: 40/@rem;
+}
+.userList .userPhoto .left,
+.userList .userPhoto .right{
+  width: 335/@rem;
+  height: 335/@rem;
+  border-radius: 10/@rem;
+  background-color: red;
+}
+.userList .userPhoto .left{
+  background: url("../images/userBefore.png") center no-repeat;
+  background-size: 100%;
+  float: left;
+  position: relative;
+}
+.userList .userPhoto .left .before,
+.userList .userPhoto .right .after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100/@rem;
+  height: 40/@rem;
+  border-radius: 0 10/@rem 0 10/@rem;
+  //background-color: red;
+  background: rgba(0,0,0,0.5);
+  color: #ffffff;
+  font-size: 26/@rem;
+  line-height: 40/@rem;
+  text-align: center;
+}
+.userList .userPhoto .right{
+  position: relative;
+  background: url("../images/userAfter.png") center no-repeat;
+  background-size: 100%;
+  float: right;
+}
+.userList .userPhoto .right .after{
+
+}
+.userList .userComment{
+  //box-sizing: border-box;
+  //padding: 0 30/@rem;
+  font-size: 28/@rem;
+  color:#8C8C8C ;
+  margin-top: 25/@rem;
+  margin-bottom: 25/@rem;
+}
+.userList .userPro{
+  line-height: 26/@rem;
+}
+.userList .userPro .iconCom{
+  display: inline-block;
+  width: 24/@rem;
+  height: 24/@rem;
+  background: url("../images/icon_Commodity-link@2x.png") no-repeat;
+  background-size: 100%;
+}
+.userList .userPro .userProName{
+  font-size: 26/@rem;
+  color: #ef508d;
+}
+.userList .attention{
+  line-height: 26/@rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 40/@rem 0 25/@rem 0;
+}
+
+.userList .view .viewImg{
+  display: inline-block;
+  width:30/@rem;
+  height: 30/@rem;
+  background: url("../images/icon_browse@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.userList .view img,
+.userList .support img,
+.userList .comment img{
+  width: 30/@rem;
+  vertical-align: middle;
+}
+.userList .view .viewNum,
+.userList .support .viewNum,
+.userList .comment .viewNum{
+  font-size: 26/@rem;
+  color: #B8B8B8;
+}
+//文章
+.userList{
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+}
+.userHeader{
+  //background-color: #bfa;
+  position: relative;
+  //box-sizing: border-box;
+  //padding: 0 30/@rem;
+  margin-top: 40/@rem;
+}
+.userHeader .userImg{
+  width: 60/@rem;
+  height: 60/@rem;
+  border-radius: 50%;
+  background-image: url("../images/userImg01.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  float: left;
+}
+.userHeader .userMessage{
+  font-size: 28/@rem;
+  color: #363636;
+  font-weight: bold;
+  line-height: 28/@rem;
+  margin-left: 80/@rem;
+  margin-bottom: 10/@rem;
+}
+
+.userHeader .userMessage img{
+  width: 25/@rem;
+  height: 25/@rem;
+  //width: 100%;
+  vertical-align: top;
+}
+.userHeader .userMessage .levelNum{
+  color: #ef508d;
+  font-size: 24/@rem;
+  font-weight: bold;
+  margin-left: -6px;
+}
+.userHeader .userText{
+  font-size: 28/@rem;
+  color:#999999 ;
+  margin-left: 80/@rem;
+}
+.userHeader .follow{
+  width: 100/@rem;
+  height: 40/@rem;
+  border-radius: 50/@rem;
+  //float: right;
+  //background-color: #bfa;
+  font-size: 22/@rem;
+  color: #ef508d;
+  position: absolute;
+  right: 0/@rem;
+  top: 10/@rem;
+  border: 1px solid #ef508d;
+  line-height: 40/@rem;
+  text-align: center;
+
+}
+.userHeader .follow .followImg{
+  width: 16/@rem;
+  height: 16/@rem;
+  display: inline-block;
+  //line-height: 100/@rem;
+
+}
+.userHeader .follow .followImg img{
+  width: 100%;
+  vertical-align: baseline;
+}
+.userPhoto{
+  //box-sizing: border-box;
+  //padding: 0 30/@rem;
+  margin-top: 40/@rem;
+}
+.userPhoto .left,
+.userPhoto .right{
+  width: 335/@rem;
+  height: 335/@rem;
+  border-radius: 10/@rem;
+  background-color: red;
+}
+.userPhoto .left{
+  background: url("../images/userBefore.png") center no-repeat;
+  background-size: 100%;
+  float: left;
+  position: relative;
+}
+.userPhoto .left .before,
+.userPhoto .right .after{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100/@rem;
+  height: 40/@rem;
+  border-radius: 0 10/@rem 0 10/@rem;
+  //background-color: red;
+  background: rgba(0,0,0,0.5);
+  color: #ffffff;
+  font-size: 26/@rem;
+  line-height: 40/@rem;
+  text-align: center;
+}
+.userPhoto .right{
+  position: relative;
+  background: url("../images/userAfter.png") center no-repeat;
+  background-size: 100%;
+  float: right;
+}
+.userPhoto .right .after{
+
+}
+.userComment{
+  //box-sizing: border-box;
+  //padding: 0 30/@rem;
+  font-size: 28/@rem;
+  color:#8C8C8C ;
+  margin-top: 25/@rem;
+  margin-bottom: 25/@rem;
+  line-height: 30/@rem;
+}
+.userPro{
+  line-height: 26/@rem;
+}
+.userPro .iconCom{
+  display: inline-block;
+  width: 24/@rem;
+  height: 24/@rem;
+  background: url("../images/icon_Commodity-link@2x.png") no-repeat;
+  background-size: 100%;
+}
+.userPro .userProName{
+  font-size: 26/@rem;
+  color: #ef508d;
+}
+.attention{
+  line-height: 26/@rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 40/@rem 0 25/@rem 0;
+}
+
+.view .viewImg{
+  display: inline-block;
+  width:30/@rem;
+  height: 30/@rem;
+  background: url("../images/icon_browse@2x.png") center no-repeat;
+  background-size: 100%;
+}
+.view img,
+.support img,
+.comment img{
+  width: 30/@rem;
+  vertical-align: middle;
+}
+.view .viewNum,
+.support .viewNum,
+.comment .viewNum{
+  font-size: 26/@rem;
+  color: #B8B8B8;
+}
+.userShow{
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+  height: 415/@rem;
+  border-bottom: 10/@rem solid #EEEEEE;
+}
+.userShow .userHeader .follow .fllowTest{
+  color: #999999;
+}
+.userShow .userHeader .follow{
+  width: 115/@rem;
+  border: 1px solid #999;
+}
+.userShow .userTitle{
+  font-size: 34/@rem;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 34/@rem;
+  margin: 35/@rem 0 30/@rem 0;
+}
+.userShow .userText{
+  position: relative;
+  //height: 265/@rem;
+}
+.userShow .userText .viewP{
+  position: absolute;
+  right: 240/@rem;
+  bottom: -60/@rem;
+}
+.userShow .userText .userProShow{
+  position: absolute;
+  left: 0;
+  bottom: -60/@rem;
+}
+.userShow .userText .userTextLeft{
+  font-size: 26/@rem;
+  color: #999;
+  width: 450/@rem;
+  height: 150/@rem;
+  //background: #bfa;
+  line-height: 200%;
+  text-align: justify;
+  //设置多行文本溢出显示省略号
+  overflow : hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  float: left;
+}
+.userShow .userText .iconLink{
+  background: url("../images/btn_Article-links@2x.png") no-repeat;
+  background-size: 100%;
+}
+.userShow .userTextRight{
+  width: 200/@rem;
+  height: 200/@rem;
+  background: url("../images/userShowImg.png") no-repeat;
+  background-size: 100%;
+  border-radius: 8/@rem;
+  //float: right;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.userShow .userTextRight .imgNum{
+  font-size: 26/@rem;
+  color: #ffffff;
+  position: absolute;
+  right: 10/@rem;
+  bottom: 10/@rem;
+}
