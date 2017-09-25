@@ -331,6 +331,24 @@
   font-size: 0.64rem;
   color: #333333;
 }
+.onTop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000000000;
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  line-height: 2.1333333333333333rem;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 0.021333333333333333rem solid #eeeeee;
+  background-color: #ffffff;
+}
+.onTop .navItem {
+  font-size: 0.64rem;
+  color: #333333;
+}
 .activeShowItem {
   font-size: 0.64rem;
   color: #ef508d!important;

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <!--需要修改引入对应的css-->
+    <link rel="stylesheet" href="../css/myzone.css">
+    <!--需要修改引入对应的css-->
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+    </div>
+    <div class="wrap myzone">
+        <div class="userinfo">
+            <a href="" class="setting"></a>
+            <a href="" class="message"></a>
+            <div class="basic-info">
+                <div class="avatar" style="background-image:url(../images/xiaowanzi.png)"></div>
+                <p>樱桃小丸子</p>
+                <p><span class="levels">2</span><span class="grade">贵妃</span></p>
+            </div>
+            <!-- 签到 -->
+            <div class="check-in">签到抽奖</div>
+            <!-- 波浪 -->
+            <div class="wave"></div>
+        </div>
+        <div class="basic-link">
+            <a href=""><i class="my-attention"></i><span>关注</span></a>
+            <a href=""><i class="my-fans"></i><span>粉丝</span></a>
+            <a href=""><i class="my-collect"></i><span>收藏</span></a>
+            <a href=""><i class="my-redpacket"></i><span>红包</span></a>
+        </div>
+
+        <div class="list">
+            <a href="./booklist.html"><i class="icon-order"></i><span>我的订单</span></a>
+            <div class="order-list">
+                <a href=""><i class="icon-payment"><em>1</em></i><span>待付款</span></a>
+                <a href=""><i class="icon-delivery"><em>1</em></i><span>待发货</span></a>
+                <a href=""><i class="icon-harvest"><em>1</em></i><span>待收货</span></a>
+                <a href=""><i class="icon-evaluate"><em>1</em></i><span>待评价</span></a>
+            </div>
+        </div>
+
+        <div class="list">
+            <a href="./booklist.html"><i class="icon-order"></i><span>我的预约</span></a>
+            <div class="order-list">
+                <a href=""><i class="icon-payment-wait"><em>1</em></i><span>待补款</span></a>
+                <a href=""><i class="icon-delivery-wait"><em>1</em></i><span>待服务</span></a>
+                <a href=""><i class="icon-harvest-wait"><em>1</em></i><span>可预约</span></a>
+                <a href=""><i class="icon-evaluate-wait"><em>1</em></i><span>待评价</span></a>
+            </div>
+        </div>
+
+        <div class="list">
+            <a href="./address.html"><i class="icon-bill"></i><span>发票管理</span></a>
+            <a href="./address.html"><i class="icon-loacl"></i><span>地址管理</span></a>
+        </div>
+
+        <div class="list">
+            <a href=""><i class="icon-sever"></i><span>联系客服</span></a>
+            <a href=""><i class="icon-problem"></i><span>问题反馈</span></a>
+            <a href=""><i class="icon-help"></i><span>帮助中心</span></a>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer>
+        <a href=""><img src="../images/icon-homepage.png" alt=""><i>首页</i></a>
+        <a href=""><img src="../images/icon-store.png" alt=""><i>分类</i></a>
+        <a href=""><img src="../images/icon-discover.png" alt=""><i>发现</i></a>
+        <a href=""><img src="../images/icon-shopcar.png" alt=""><i>购物车</i></a>
+        <a href="" class="active"><img src="../images/icon-mine.png" alt=""><i>我的</i></a>
+    </footer>
+
+<script type="text/javascript" src="../js/rem.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+<!--<script type="text/javascript" src="../js/active.js"></script>-->
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('.loading').fadeOut();
+        var mySwiper01 = new Swiper('.swiper01', {
+            direction: 'horizontal',
+            loop: true,
+            // 如果需要分页器
+            pagination: '.swiper-pagination',
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false,
+
+            // 如果需要前进后退按钮
+//            nextButton: '.swiper-button-next',
+//            prevButton: '.swiper-button-prev',
+
+            // 如果需要滚动条
+//            scrollbar: '.swiper-scrollbar',
+        })
+
+    })
+</script>
+</body>
+</html>

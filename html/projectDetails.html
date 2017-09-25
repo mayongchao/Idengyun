@@ -159,10 +159,24 @@
                 相关店铺
             </li>
         </ul>
+        <ul class="onTop" style="display: none">
+            <li class="navItem activeShowItem">
+                商品详情
+            </li>
+            <li class="navItem">
+                相关案例
+            </li>
+            <li class="navItem">
+                看谁买了
+            </li>
+            <li class="navItem">
+                相关店铺
+            </li>
+        </ul>
         <!--项目详情列表-->
         <div class="DetailNavList">
             <!--商品详情-->
-            <div class="goodsDetail" style="display: none">
+            <div class="goodsDetail" style="display: block">
                 <p class="goodsText">
                     神奇！！专业技师亲自操作，眼角皱纹全无踪！
                 </p>
@@ -475,7 +489,7 @@
                 </li>
             </ul>
             <!--相关店铺-->
-            <ul class="shopDetail" style="display: block">
+            <ul class="shopDetail" style="display: none">
                 <li class="shopItem">
                     <div class="shopImage">
                         <img src="../images/shopImage.png" alt="">
@@ -735,22 +749,21 @@
             // 如果需要滚动条
 //            scrollbar: '.swiper-scrollbar',
         })
+        //navtab置顶
+        onTop()
+        function onTop() {
+            $(window).scroll(function () {
+                var navTop = $('.DetailNav').offset().top
+                var top = $(window).scrollTop()
+                console.log(top)
+                if(top > navTop){
+                    $('.onTop').show()
+                }else if(navTop>top){
+                    $('.onTop').hide()
+                }
+            })
+        }
 
-        var navTop = $('.DetailNav').offset().top
-       /* console.log(navTop.offset().top)
-        console.log($('.DetailNav').offset().top)*/
-       console.log(navTop)
-        $(window).scroll(function () {
-            var top = $(window).scrollTop()
-            console.log(top)
-            if(top > navTop){
-//                alert('hello')
-                $('.DetailNav').css({'position':'fixed','top':'0','left':'0'})
-            }else if(navTop>top){
-                $('.DetailNav').css({'position':'static'})
-            }
-
-        })
 
 
 

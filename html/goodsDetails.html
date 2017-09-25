@@ -153,6 +153,14 @@
             看谁买了
         </li>
     </ul>
+    <ul class="onTop" style="display: none">
+        <li class="navItem activeShowItem">
+            商品详情
+        </li>
+        <li class="navItem">
+            看谁买了
+        </li>
+    </ul>
     <!--项目详情列表-->
     <div class="DetailNavList">
         <!--商品详情-->
@@ -514,6 +522,22 @@
             // 如果需要滚动条
 //            scrollbar: '.swiper-scrollbar',
         })
+
+
+        //navtab置顶
+        onTop()
+        function onTop() {
+            $(window).scroll(function () {
+                var navTop = $('.DetailNav').offset().top
+                var top = $(window).scrollTop()
+                console.log(top)
+                if(top > navTop){
+                    $('.onTop').show()
+                }else if(navTop>top){
+                    $('.onTop').hide()
+                }
+            })
+        }
         goTop()
         tabNav()
         getRedPacket()

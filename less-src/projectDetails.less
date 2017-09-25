@@ -341,7 +341,7 @@ body {
 //tab页签导航
 .DetailNav{
   width: 100%;
-  z-index: 1000000000;
+  //z-index: 1000000000;
   box-sizing: border-box;
   padding: 0 30/@rem;
   line-height: 100/@rem;
@@ -354,12 +354,31 @@ body {
   font-size: 30/@rem;
   color: #333333;
 }
+.onTop{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000000000;
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+  line-height: 100/@rem;
+  display: flex;
+  justify-content:space-between;
+  border-bottom: 1/@rem solid #EEEEEE;
+  background-color: #ffffff;
+}
+.onTop .navItem{
+  font-size: 30/@rem;
+  color: #333333;
+}
 .activeShowItem{
   //font-weight: bold;
   font-size: 30/@rem;
   color: #ef508d!important;
   border-bottom: 4/@rem solid #ef508d;
 }
+
 //商品详情
 .goodsDetail{
   box-sizing: border-box;

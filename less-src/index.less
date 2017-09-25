@@ -1,6 +1,6 @@
 @rem: 46.875rem;
 body {
-  height: 4000px;
+  //height: 4000px;
 }
 //html,body{overflow:hidden;overflow-y:auto;}
 .search-wrapper {
@@ -975,8 +975,67 @@ body {
 
 //shopHomePage
 
-
-
+//footer
+footer{
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10/@rem 50/@rem;
+  font-size: 24/@rem;
+  color: #c0c0c0;
+  background-color: #ffffff;
+}
+footer img{
+  width: 40/@rem;
+  height: 40/@rem;
+}
+footer a{
+  display: block;
+  text-align: center;
+}
+footer span{
+  display: block;
+  margin-top: 10/@rem;
+}
+.icon-homepage,
+.icon-store,
+.icon-discover,
+.icon-shopcar,
+.icon-mine{
+  display: inline-block;
+  width: 45/@rem;
+  height: 45/@rem;
+  background-size: 40/@rem;
+  overflow: hidden;
+}
+.icon-homepage{
+  background: url("../images/icon-homepage01.png") center no-repeat;
+  background-size: 40/@rem;
+}
+.icon-store{
+  background: url("../images/icon-store.png") center no-repeat;
+  background-size: 40/@rem;
+}
+.icon-discover{
+  background: url("../images/icon-discover.png") center no-repeat;
+  background-size: 40/@rem;
+}
+.icon-shopcar{
+  background: url("../images/icon-shopcar.png") center no-repeat;
+  background-size: 40/@rem;
+}
+.icon-mine{
+  background: url("../images/mine-gray.png") center no-repeat;
+  background-size: 40/@rem;
+}
+//给wrapper空出底部的高度
+.wrapper{
+  margin-bottom: 100/@rem;
+}
 
 
 

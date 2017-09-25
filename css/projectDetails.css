@@ -321,7 +321,6 @@
 }
 .DetailNav {
   width: 100%;
-  z-index: 1000000000;
   box-sizing: border-box;
   padding: 0 0.64rem;
   line-height: 2.1333333333333333rem;
@@ -331,6 +330,24 @@
   background-color: #ffffff;
 }
 .DetailNav .navItem {
+  font-size: 0.64rem;
+  color: #333333;
+}
+.onTop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000000000;
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  line-height: 2.1333333333333333rem;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.021333333333333333rem solid #eeeeee;
+  background-color: #ffffff;
+}
+.onTop .navItem {
   font-size: 0.64rem;
   color: #333333;
 }
