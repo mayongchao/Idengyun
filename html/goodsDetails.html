@@ -145,22 +145,25 @@
             </span>
     </div>
     <!--tab页签导航-->
-    <ul class="DetailNav">
+    <div class="fixHeight">
+        <ul class="DetailNav">
+            <li class="navItem activeShowItem">
+                商品详情
+            </li>
+            <li class="navItem">
+                看谁买了
+            </li>
+        </ul>
+    </div>
+
+   <!-- <ul class="onTop" style="display: none">
         <li class="navItem activeShowItem">
             商品详情
         </li>
         <li class="navItem">
             看谁买了
         </li>
-    </ul>
-    <ul class="onTop" style="display: none">
-        <li class="navItem activeShowItem">
-            商品详情
-        </li>
-        <li class="navItem">
-            看谁买了
-        </li>
-    </ul>
+    </ul>-->
     <!--项目详情列表-->
     <div class="DetailNavList">
         <!--商品详情-->
@@ -233,6 +236,13 @@
                         </p>
                     </div>
                 </div>
+                <div class="likeWrap clearfix">
+                    <p class="like">
+                        <img src="../images/icon_Give_the_thumbs_up_n@2x.png" alt="">
+                        <i>213</i>
+                    </p>
+                </div>
+
             </li>
             <li class="whoBuyItem">
                 <div class="userListHeader">
@@ -283,6 +293,13 @@
                         </p>
                     </div>
                 </div>
+                <div class="likeWrap clearfix">
+                    <p class="like">
+                        <img src="../images/icon_Give_the_thumbs_up_n@2x.png" alt="">
+                        <i>213</i>
+                    </p>
+                </div>
+
             </li>
             <li class="whoBuyItem">
                 <div class="userListHeader">
@@ -333,7 +350,15 @@
                         </p>
                     </div>
                 </div>
+                <div class="likeWrap clearfix">
+                    <p class="like">
+                        <img src="../images/icon_Give_the_thumbs_up_n@2x.png" alt="">
+                        <i>213</i>
+                    </p>
+                </div>
+
             </li>
+
         </ul>
     </div>
     <!--加载完毕追加底部内容-->
@@ -528,13 +553,13 @@
         onTop()
         function onTop() {
             $(window).scroll(function () {
-                var navTop = $('.DetailNav').offset().top
+                var navTop = $('.fixHeight').offset().top
                 var top = $(window).scrollTop()
-                console.log(top)
+//                console.log(top)
                 if(top > navTop){
-                    $('.onTop').show()
+                    $('.DetailNav').css({'position':'fixed','top':'0','left':'0','z-index':'10000'})
                 }else if(navTop>top){
-                    $('.onTop').hide()
+                    $('.DetailNav').css({'position':'static'})
                 }
             })
         }
@@ -622,6 +647,18 @@
 
 //            $('.cover-decision').remove();
             });
+        }
+        like()
+        //点赞
+        function like() {
+            $('.like>img').click(function () {
+//                alert('hello')
+                if($(this).next().hasClass('active')){
+                    return
+                }
+                $(this).attr({src:'../images/icon_Give_the_thumbs_up@2x.png'}).next().text(parseInt($(this).next().text())+1)
+                $(this).next().addClass('active')
+            })
         }
 
     })

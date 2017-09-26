@@ -1,6 +1,6 @@
 @rem: 46.875rem;
 body {
-  height: 4000px;
+  //height: 4000px;
 }
 //头部
 .navScare{
@@ -33,11 +33,20 @@ body {
   margin-right: 40/@rem;
 }
 
+.fixHeight{
+  width: 100%;
+  height: 100/@rem;
+}
 .shopList{
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 100/@rem;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #eeeeee;
-  margin-top: 140/@rem;
+  margin-top: 128/@rem;
 }
 .shopList .shopItem{
   font-size: 30/@rem;
@@ -52,6 +61,10 @@ body {
   border-bottom: 4/@rem solid #ef508d;
 }
 //列表
+.list{
+  margin-top: 130/@rem;
+  //background-color: red;
+}
 .collUserItem{
   box-sizing: border-box;
   padding: 40/@rem 30/@rem;

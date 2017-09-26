@@ -50,10 +50,16 @@ body {
   height: 1px;
   background-color: #EEEEEE;
 }
+.fixHeight {
+  width: 100%;
+  height: 2.2613333333333334rem;
+}
 .shopList {
+  width: 100%;
   background-color: white;
   display: flex;
   justify-content: space-around;
+  border-bottom: 0.021333333333333333rem solid #eeeeee;
 }
 .shopList .shopItem {
   font-size: 0.64rem;

@@ -130,7 +130,13 @@
   color: #666666;
   text-align: center;
 }
+.fixHeight {
+  width: 100%;
+  height: 2.1333333333333333rem;
+}
 .shopList {
+  width: 100%;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #eeeeee;
@@ -148,6 +154,7 @@
 .userList {
   box-sizing: border-box;
   padding: 0 0.64rem;
+  border-bottom: 0.21333333333333335rem solid #eeeeee;
 }
 .userList .userHeader {
   position: relative;
@@ -440,13 +447,13 @@
   height: 8.853333333333333rem;
   border-bottom: 0.21333333333333335rem solid #eeeeee;
 }
-.userShow .userHeader .follow .fllowTest {
+/*.userShow .userHeader .follow .fllowTest{
   color: #999999;
 }
-.userShow .userHeader .follow {
-  width: 2.453333333333333rem;
+.userShow .userHeader .follow{
+  width: 115/@rem;
   border: 1px solid #999;
-}
+}*/
 .userShow .userTitle {
   font-size: 0.7253333333333334rem;
   color: #000000;

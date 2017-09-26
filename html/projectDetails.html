@@ -145,7 +145,24 @@
             </span>
         </div>
         <!--tab页签导航-->
-        <ul class="DetailNav">
+        <div class="fixHeight">
+            <ul class="DetailNav">
+                <li class="navItem activeShowItem">
+                    商品详情
+                </li>
+                <li class="navItem">
+                    相关案例
+                </li>
+                <li class="navItem">
+                    看谁买了
+                </li>
+                <li class="navItem">
+                    相关店铺
+                </li>
+            </ul>
+        </div>
+
+        <!--<ul class="onTop" style="display: none">
             <li class="navItem activeShowItem">
                 商品详情
             </li>
@@ -158,21 +175,7 @@
             <li class="navItem">
                 相关店铺
             </li>
-        </ul>
-        <ul class="onTop" style="display: none">
-            <li class="navItem activeShowItem">
-                商品详情
-            </li>
-            <li class="navItem">
-                相关案例
-            </li>
-            <li class="navItem">
-                看谁买了
-            </li>
-            <li class="navItem">
-                相关店铺
-            </li>
-        </ul>
+        </ul>-->
         <!--项目详情列表-->
         <div class="DetailNavList">
             <!--商品详情-->
@@ -610,12 +613,12 @@
                             <button class="attr-item virtualSkuCss" id="s3" key="711">190ml精油</button>
                             <button class="attr-item virtualSkuCss" id="s4" key="711">190ml精油</button>
                             <button class="attr-item virtualSkuCss" id="s5" key="711">190ml精油</button>
-                            <button class="attr-item virtualSkuCss" id="s3" key="711">190ml精油</button>
-                            <button class="attr-item virtualSkuCss" id="s4" key="711">190ml精油</button>
-                            <button class="attr-item virtualSkuCss" id="s5" key="711">190ml精油</button>
-                            <button class="attr-item virtualSkuCss" id="s3" key="711">190ml精油</button>
-                            <button class="attr-item virtualSkuCss" id="s4" key="711">190ml精油</button>
-                            <button class="attr-item virtualSkuCss" id="s5" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s6" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s7" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s8" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s9" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s10" key="711">190ml精油</button>
+                            <button class="attr-item virtualSkuCss" id="s11" key="711">190ml精油</button>
 
 
                             <input type="hidden" id="ks0" sprice="88000" value="0">
@@ -753,18 +756,16 @@
         onTop()
         function onTop() {
             $(window).scroll(function () {
-                var navTop = $('.DetailNav').offset().top
+                var navTop = $('.fixHeight').offset().top
                 var top = $(window).scrollTop()
                 console.log(top)
                 if(top > navTop){
-                    $('.onTop').show()
+                    $('.DetailNav').css({'position':'fixed','top':'0','left':'0','z-index':'10000'})
                 }else if(navTop>top){
-                    $('.onTop').hide()
+                    $('.DetailNav').css({'position':'static'})
                 }
             })
         }
-
-
 
 
 
@@ -806,6 +807,8 @@
                 $(this).siblings().removeClass('activeShowItem')
                 $(this).addClass('activeShowItem')
                 var index = $(this).index()
+               /* $('.onTop').children().removeClass('activeShowItem').eq(index).addClass('activeShowItem')
+                $('.DetailNav').children().removeClass('activeShowItem').eq(index).addClass('activeShowItem')*/
                 $('.DetailNavList').children().hide().eq(index).show()
             })
         }

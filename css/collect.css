@@ -1,6 +1,3 @@
-body {
-  height: 4000px;
-}
 .navScare {
   background-color: #ffffff;
   position: fixed;
@@ -30,11 +27,20 @@ body {
   float: right;
   margin-right: 0.8533333333333334rem;
 }
+.fixHeight {
+  width: 100%;
+  height: 2.1333333333333333rem;
+}
 .shopList {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  height: 2.1333333333333333rem;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-around;
   border-bottom: 1px solid #eeeeee;
-  margin-top: 2.986666666666667rem;
+  margin-top: 2.7306666666666666rem;
 }
 .shopList .shopItem {
   font-size: 0.64rem;
@@ -45,6 +51,9 @@ body {
   font-size: 0.64rem;
   color: #ef508d!important;
   border-bottom: 0.08533333333333333rem solid #ef508d;
+}
+.list {
+  margin-top: 2.7733333333333334rem;
 }
 .collUserItem {
   box-sizing: border-box;
