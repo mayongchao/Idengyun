@@ -12,13 +12,13 @@
 <body>
 <div class="techWarpper">
     <!--技师主页导航-->
-    <div class="navShop">
+   <!-- <div class="navShop">
         <img src="../images/btn_nav_jump@2x.png" alt="" class="iconBack">
         <img src="../images/btn_nav_more@2x.png" alt="" class="iconMore">
         <img src="../images/btn_nav_share@2x.png" alt="" class="iconShare">
-    </div>
+    </div>-->
     <!--1px分割线-->
-    <div class="serverLine lineTop"></div>
+    <!--<div class="serverLine lineTop"></div>-->
     <div class="techMessage">
         <div class="techHead">
             <img src="../images/tech_head_img.png" alt="">
@@ -235,16 +235,19 @@
     <div class="shopLineTwo"></div>
 
     <!--我店案例与我店项目-->
-    <ul class="shopList">
-        <li class="shopItem activeShowItem">
-            我店案例
-        </li>
-        <li class="shopItem">
-            我店项目
-        </li>
-    </ul>
+    <div class="fixHeight">
+        <ul class="shopList">
+            <li class="shopItem activeShowItem">
+                我店案例
+            </li>
+            <li class="shopItem">
+                我店项目
+            </li>
+        </ul>
+    </div>
+
     <!--1px分割线-->
-    <div class="serverLine"></div>
+    <!--<div class="serverLine"></div>-->
 
     <!--我店案例-->
     <div class="shopCase" style="display: none">
@@ -592,14 +595,21 @@
                 $(document).scrollTop(0);
             })
         }
-        $(window).scroll(function () {
-//            页面滚动的距离
-//            console.log($(window).scrollTop());
-//            当前页面的总高度
-            console.log($(document).height());
-//            浏览器页面可视区域的高度
-//            console.log($(window).height());
-        })
+        onTop()
+        function onTop() {
+            $(window).scroll(function () {
+                var navTop = $('.fixHeight').offset().top
+                var top = $(window).scrollTop()
+                console.log(top)
+                if(top > navTop){
+                    $('.shopList').css({'position':'fixed','top':'0','left':'0','z-index':'10000'})
+                }else if(navTop>top){
+                    $('.shopList').css({'position':'static'})
+                }
+            })
+        }
+
+
 
 
     })

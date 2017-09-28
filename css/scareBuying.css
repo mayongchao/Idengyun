@@ -26,11 +26,26 @@
   float: right;
   margin-right: 0.8533333333333334rem;
 }
+.scareWrapper {
+  width: 100%;
+  height: 2.453333333333333rem;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: scroll;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.scareWrapper::-webkit-scrollbar {
+  display: none;
+}
 .scareList {
   display: flex;
   justify-content: flex-start;
-  margin-top: 2.7733333333333334rem;
   border-bottom: 1px solid #eeeeee;
+  min-width: 100%;
 }
 .scareList .scareItem {
   font-size: 0.64rem;
@@ -40,6 +55,9 @@
 }
 .scareList .scareItem:first-child {
   margin-left: 1.0666666666666667rem;
+}
+.scareList .scareItem:last-child {
+  margin-right: 1.0666666666666667rem;
 }
 .activeShowItem {
   font-size: 0.64rem;
@@ -52,6 +70,9 @@
   background-color: #eeeeee;
   margin: 40/@rem 0;
 }*/
+.list {
+  margin-top: 2.453333333333333rem;
+}
 .scarebuy {
   box-sizing: border-box;
   padding: 0 0.64rem;

@@ -76,7 +76,8 @@
   zoom: 1;
 }
 .swiper01 .swiper-wrapper .swiper-slide img,
-.swiper05 .swiper-wrapper .swiper-slide img {
+.swiper05 .swiper-wrapper .swiper-slide img,
+.swiper06 .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
 .swiper01 .swiper-pagination-bullet,
@@ -836,7 +837,7 @@ footer {
   display: flex;
   justify-content: space-between;
   position: fixed;
-  z-index: 1000;
+  z-index: 100;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -891,4 +892,19 @@ footer span {
 }
 .wrapper {
   margin-bottom: 2.1333333333333333rem;
+}
+.bigPhotoShow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hide {
+  display: none;
 }

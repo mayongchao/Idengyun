@@ -12,11 +12,11 @@
 <body>
 <div class="shopWarpper">
     <!--院店主页导航栏-->
-    <div class="navShop">
+   <!-- <div class="navShop">
         <img src="../images/btn_nav_back_s@2x.png" alt="" class="iconBack">
         <img src="../images/btn_nav_more_s@2x.png" alt="" class="iconMore">
         <img src="../images/btn_nav_share_s@2x.png" alt="" class="iconShare">
-    </div>
+    </div>-->
     <!--院店主页轮播图-->
     <div class="swiper05 swiper-container">
         <ul class="swiper-wrapper">
@@ -277,19 +277,22 @@
     <!--10px分割线-->
     <div class="shopLineTwo"></div>
     <!--我店案例 我店项目 技师团队导航-->
-    <ul class="shopList">
-        <li class="shopItem activeShowItem">
-            我店案例
-        </li>
-        <li class="shopItem">
-            我店项目
-        </li>
-        <li class="shopItem">
-            技师团队
-        </li>
-    </ul>
+    <div class="fixHeight">
+        <ul class="shopList">
+            <li class="shopItem activeShowItem">
+                我店案例
+            </li>
+            <li class="shopItem">
+                我店项目
+            </li>
+            <li class="shopItem">
+                技师团队
+            </li>
+        </ul>
+    </div>
+
     <!--1px分割线-->
-    <div class="serverLine"></div>
+    <!--<div class="serverLine"></div>-->
     <!--我店案例-->
     <div class="shopCase" style="display: block">
         <div class="userList">
@@ -793,6 +796,8 @@
             }
         });
 
+
+
 //        页签切换效果
         tabNav();
 //       回到顶部
@@ -823,8 +828,19 @@
                 $(document).scrollTop(0);
             })
         }
-
-
+        onTop()
+        function onTop() {
+            $(window).scroll(function () {
+                var navTop = $('.fixHeight').offset().top
+                var top = $(window).scrollTop()
+                console.log(top)
+                if(top > navTop){
+                    $('.shopList').css({'position':'fixed','top':'0','left':'0','z-index':'10000'})
+                }else if(navTop>top){
+                    $('.shopList').css({'position':'static'})
+                }
+            })
+        }
 
     })
 </script>

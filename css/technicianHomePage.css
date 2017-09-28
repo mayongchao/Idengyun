@@ -538,9 +538,16 @@
   line-height: 0.8533333333333334rem;
   margin-top: 0.64rem;
 }
+.fixHeight {
+  width: 100%;
+  height: 2.1333333333333333rem;
+}
 .shopList {
+  width: 100%;
   display: flex;
   justify-content: space-around;
+  background-color: #ffffff;
+  border-bottom: 0.042666666666666665rem solid #eeeeee;
 }
 .shopList .shopItem {
   font-size: 0.64rem;

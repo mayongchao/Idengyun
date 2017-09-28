@@ -12,7 +12,7 @@
 <body>
 <div class="wrapper">
     <!--头部-->
-    <div class="search-wrapper">
+  <!--  <div class="search-wrapper">
         <div class="search-sub">
             <div class="area">
                 <div class="text">北京</div>
@@ -28,10 +28,11 @@
                 <img src="../images/btn_nav_news_n@2x.png" alt="">
             </div>
         </div>
-    </div>
+    </div>-->
     <!--首页轮播图-->
     <div class="swiper01 swiper-container">
         <ul class="swiper-wrapper">
+
             <li class="swiper-slide">
                 <a href="javascript:;">
                     <img src="../images/banner.png" alt="">
@@ -872,7 +873,30 @@
             <div class="userTextRight">
                 <span class="imgNum">3张图片</span>
             </div>
+            <div class="bigPhotoShow" style="display: none">
+                <div class="swiper06 swiper-container">
+                    <ul class="swiper-wrapper">
 
+                        <li class="swiper-slide">
+                            <a href="javascript:;">
+                                <img src="../images/banner.png" alt="">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="javascript:;">
+                                <img src="../images/banner02.png" alt="">
+                            </a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a href="javascript:;">
+                                <img src="../images/banner.png" alt="">
+                            </a>
+                        </li>
+
+
+                    </ul>
+                </div>
+            </div>
         </div>
     </div>
     <!--loading图-->
@@ -910,11 +934,15 @@
 
 </div>
 
+
 <script type="text/javascript" src="../js/rem.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
-<script type="text/javascript" src="../js/active.js"></script>
+<!--<script type="text/javascript" src="../js/active.js"></script>-->
 <script type="text/javascript">
+    document.addEventListener('touchstart',function(event){
+        event.preventDefault();
+    });
     $(document).ready(function () {
         var mySwiper01 = new Swiper('.swiper01', {
             direction: 'horizontal',
@@ -968,8 +996,7 @@
             // 如果需要滚动条
 //            scrollbar: '.swiper-scrollbar',
         })
-
-          var mySwiper03 = new Swiper('.beautyaround-carousel ', {
+        var mySwiper05 = new Swiper('.beautyaround-carousel ', {
          pagination: '.swiper-pagination',
 
          //__________________
@@ -981,8 +1008,35 @@
          grabCursor: true,
          paginationClickable: true,
          });
+//        点击文章小图 展示大图
+        var mySwiper06 = new Swiper('.swiper06', {
+            direction: 'horizontal',
+            initialSlide :1,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        })
 
+        switchBigPhoto()
+        function switchBigPhoto() {
+            $('.userTextRight').click(function () {
+//                alert('hello')
+               /* console.log(mySwiper06.originalParams.initialSlide)
+                mySwiper06.originalParams.initialSlide=0;*/
+//               每次点击自动跳转到第一张图
+                mySwiper06.slideTo(0, 1000, false);
+//                大图展示的时候禁用滚动条
+                $('body','html').css({'overflow':'hidden'})
+                $('.bigPhotoShow').show()
+
+            })
+            $('.bigPhotoShow,.swiper06>.swiper-slide').click(function () {
+                $('.bigPhotoShow').hide()
+//                大图消失使用滚动条
+                $('body','html').css({'overflow':'visible'})
+            })
+        }
     })
+
 </script>
 </body>
 </html>

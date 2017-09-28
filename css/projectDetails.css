@@ -746,6 +746,24 @@
   color: #cccccc;
   margin-top: 0.4266666666666667rem;
 }
+.likeWrap {
+  margin-top: 0.4266666666666667rem;
+}
+.like {
+  float: right;
+}
+.like i {
+  font-style: normal;
+  font-size: 0.5333333333333333rem;
+  color: #D2D2D2;
+}
+i.active {
+  color: #EF508D;
+}
+.like img {
+  width: 0.64rem;
+  vertical-align: middle;
+}
 .shopItem {
   box-sizing: border-box;
   padding: 0.8533333333333334rem 0.64rem;
