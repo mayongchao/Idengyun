@@ -14,7 +14,7 @@ body {
   zoom: 1;
 }
 //个人主页导航
-.navShop{
+.navShop,.navShopGray{
   //background-color: #ffffff;
   position: fixed;
   left: 0;
@@ -22,7 +22,7 @@ body {
   z-index: 1000;
   width: 100%;
   box-sizing: border-box;
-  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  padding: 50/@rem 30/@rem 30/@rem 30/@rem;
   //border-bottom: 1px solid #eeeeee;
 
   font-size: 34/@rem;
@@ -31,21 +31,24 @@ body {
   color: #ffffff;
 
 }
-.navShop .iconBack{
+.navShop .iconBack,
+.navShopGray .iconBack{
   width: 20/@rem;
   float: left;
 }
-.navShop .iconMore{
+.navShop .iconMore,
+.navShopGray .iconMore{
   width: 44/@rem;
   float: right;
   margin-top: 10/@rem;
 }
-.navShop .iconShare{
+.navShop .iconShare,
+.navShopGray .iconShare{
   position: absolute;
   width: 38/@rem;
   //float: right;
   margin-right: 40/@rem;
-  top: 60/@rem;
+  top: 48/@rem;
   right: 80/@rem;
 }
 //个人主页
@@ -458,7 +461,7 @@ body {
   color:#8C8C8C ;
   margin-top: 25/@rem;
   margin-bottom: 25/@rem;
-  line-height: 30/@rem;
+  line-height: 38/@rem;
 }
 .userPro{
   line-height: 26/@rem;
@@ -573,4 +576,30 @@ body {
   position: absolute;
   right: 10/@rem;
   bottom: 10/@rem;
+}
+//切换大图
+.swiper06 .swiper-wrapper .swiper-slide img{
+  width: 100%;
+}
+.bigPhotoShow{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  display: flex;
+  align-items: center;
+}
+.swiper06 .swiper-wrapper{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  .swiper-slide{
+    align-self: center;
+    a{
+      display: inline-block;
+    }
+  }
 }

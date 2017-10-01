@@ -14,10 +14,16 @@
 <body>
     <div class="personWarpper">
         <!--个人主页导航-->
-        <!--<div class="navShop">
+       <!-- <div class="navShopGray" style="background-color: #ffffff;color: #000000;opacity: 0;z-index: 1000000">
             <img src="../images/btn_nav_jump@2x.png" alt="" class="iconBack">
             <img src="../images/btn_nav_more@2x.png" alt="" class="iconMore">
             <img src="../images/btn_nav_share@2x.png" alt="" class="iconShare">
+            个人主页
+        </div>
+        <div class="navShop" style="opacity: 1" >
+            <img src="../images/btn_nav_back_s@2x.png" alt="" class="iconBack">
+            <img src="../images/btn_nav_more_s@2x.png" alt="" class="iconMore">
+            <img src="../images/btn_nav_share_s@2x.png" alt="" class="iconShare">
             个人主页
         </div>-->
         <!--个人主页-->
@@ -621,6 +627,29 @@
                 </div>
             </li>
         </ul>
+        <!--bigPhotoShow-->
+        <div class="bigPhotoShow" id="bigPhoto" style="display: none">
+            <div class="swiper06 swiper-container">
+                <ul class="swiper-wrapper">
+
+                    <li class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="../images/articlePhoto01.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="../images/articlePhoto02.jpg" alt="">
+                        </a>
+                    </li>
+                    <li class="swiper-slide">
+                        <a href="javascript:;">
+                            <img src="../images/articlePhoto03.jpg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
 <script type="text/javascript" src="../js/rem.js"></script>
@@ -677,7 +706,7 @@
                 }
             })
         }
-
+        //切换关注
         function switchFllow() {
             $('.follow').click(function () {
 //                alert('hello')
@@ -686,7 +715,95 @@
                 $(this).find('.fllowTest').text('已关注')
             })
         }
+        //头部变化效果 此功能wap端不需要
+        headAnima()
+        function headAnima() {
+            $(window).scroll(function () {
+//                console.log($(window).scrollTop())
+                var scrollTop = $(window).scrollTop();
+                console.log(scrollTop)
+                var m = scrollTop/150
+                var n = Math.abs(150/(scrollTop+1))
+                $('.navShopGray').css({'opacity':m})
+                $('.navShop').css({'opacity':n})
 
+
+               /* if(scrollTop>40){
+                    $('.navShop').hide()
+                }else if(scrollTop<40){
+                    $('.navShop').show()
+                }*/
+            })
+        }
+
+        //        点击文章小图 展示大图
+        var mySwiper06 = new Swiper('.swiper06', {
+            direction: 'horizontal',
+            initialSlide :1,
+            observer:true,//修改swiper自己或子元素时，自动初始化swiper
+            observeParents:true,//修改swiper的父元素时，自动初始化swiper
+        })
+        //        阻止移动端默认行为
+        function handler() {
+            event.preventDefault();
+        }
+        switchBigPhoto()
+        function switchBigPhoto() {
+            $('.userTextRight').click(function () {
+//               每次点击自动跳转到第一张图
+                mySwiper06.slideTo(0, 1000, false);
+//                大图展示的时候禁用滚动条
+                $('body','html').css({'height':'100%','overflow':'hidden'})
+
+                $('.bigPhotoShow').fadeIn('fast')
+//                阻止移动端默认行为
+                document.addEventListener('touchmove', handler, false);
+
+            })
+
+            $('.bigPhotoShow,.swiper06>.swiper-slide').click(function () {
+
+                $('.bigPhotoShow').fadeOut('slow')
+                //解绑默认行为
+                document.removeEventListener('touchmove', handler, false);
+
+//                大图消失使用滚动条
+                $('body','html').css({'height':'100%','overflow':'visible'})
+            })
+
+
+
+            /*            var userText = document.getElementById('userText')
+             var bigPhoto = document.getElementById('bigPhoto')
+             /!*userText.addEventListener('touchstart',function () {
+             alert('hello')
+             })*!/
+
+             userText.addEventListener('touchstart', function () {
+             //               每次点击自动跳转到第一张图
+             mySwiper06.slideTo(0, 1000, false);
+             //                大图展示的时候禁用滚动条
+             $('.bigPhotoShow').show()
+             })
+
+
+             bigPhoto.addEventListener('touchstart', function () {
+             $('body','html').css({'height':'100%','overflow':'hidden'})
+             //                alert('hello')
+             })
+
+
+
+
+             $('.bigPhotoShow,.swiper06>.swiper-slide').addEventListener('touchstart',function () {
+             $('.bigPhotoShow').hide()
+             //                大图消失使用滚动条
+             $('body','html').css({'height':'100%','overflow':'visible'})
+             })*/
+
+
+
+        }
 
     })
 </script>

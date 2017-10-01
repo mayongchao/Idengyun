@@ -29,7 +29,7 @@
             21:00
         </li>
         <li class="scareItem">
-            08/04 21:00
+                08/04 21:00
         </li>
         <li class="scareItem">
             20:00
@@ -384,10 +384,35 @@
                 scareWith += $('.scareItem').eq(i).outerWidth(true)
 //            console.log(i)
             }
-            console.log(scareWith)
+//            console.log(scareWith)
             $('.scareList').width(scareWith)
         }
-
+//        navMove()
+        function navMove() {
+            var left = 0;
+            $('.scareItem').click(function () {
+//                alert('hello')
+//                console.log($(this).offset().left)
+                var navLeft = $(this).offset().left
+                left += (navLeft);
+//                console.log(left)
+//                console.log(navLeft)
+//                console.log($('.scareList').width())
+                var listWidth = $('.scareList').width()
+                var scrWidth = $(window).width()
+                console.log(scrWidth)
+                var result = listWidth-scrWidth
+                console.log(result)
+                console.log(left)
+                if(result>left){
+//                    return
+//                    console.log(moveLeft)
+                    $('.scareList').css({'transform':'translateX('+(-left)+'px)','transition':'.3s'})
+//                    transform: translateX(200px) rotate(90deg);
+//                    transition: 1s;
+                }
+            })
+        }
     })
 
 </script>

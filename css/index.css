@@ -710,7 +710,7 @@
   color: #8C8C8C ;
   margin-top: 0.5333333333333333rem;
   margin-bottom: 0.5333333333333333rem;
-  line-height: 0.64rem;
+  line-height: 0.8106666666666666rem;
 }
 .userPro {
   line-height: 0.5546666666666666rem;
@@ -908,3 +908,7 @@ footer span {
 .hide {
   display: none;
 }
+/*html,body{
+  height: 100%;
+  overflow: hidden;
+}*/
