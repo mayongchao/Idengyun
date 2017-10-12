@@ -1,0 +1,492 @@
+@rem: 46.875rem;
+body {
+  //height: 4000px;
+  background-color: #f3f3f3;
+}
+.navScare{
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navScare .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+.navScare .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}
+.shopWrapper{
+  margin-top: 130/@rem;
+  background-color: #ffffff;
+}
+.shopSelect{
+  box-sizing: border-box;
+  padding: 0 30/@rem;
+  font-size: 26/@rem;
+  color: #666666;
+  line-height: 100/@rem;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  background-color: #f5f5f5;
+  .city{
+    font-size: 30/@rem;
+    color:#333333;
+  }
+  .area{
+    font-size: 30/@rem;
+    color:#333333;
+  }
+  .modify{
+    float: right;
+    margin-right: 20/@rem;
+  }
+  img{
+    width: 16/@rem;
+    float: right;
+    margin-top: 38/@rem;
+  }
+}
+.noShopSelect{
+  position: relative;
+  width: 100%;
+  height: 450/@rem;
+  background-color:#f5f5f5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .icon{
+    img{
+      width: 145/@rem;
+    }
+    p{
+      font-size: 30/@rem;
+      color: #999999;
+      margin-top: 20/@rem;
+    }
+  }
+
+}
+.ReservationShop{
+  box-sizing: border-box;
+  padding:0 30/@rem;
+  border-bottom: 20/@rem solid #f3f3f3;
+  .ReservationHead{
+    line-height: 100/@rem;
+    .iconReservation{
+      width: 30/@rem;
+      vertical-align: middle;
+    }
+    .text{
+      font-size: 30/@rem;
+      color: #333333;
+    }
+    .moreShop{
+      font-size: 26/@rem;
+      color: #666666;
+      float: right;
+      margin-right: 20/@rem;
+    }
+    .btnRight{
+      width: 16/@rem;
+      float: right;
+      margin-top: 40/@rem;
+    }
+  }
+  .ReservationShopList{
+    width: 100%;
+    .ReservationShopItem{
+      position: relative;
+      box-sizing: border-box;
+      padding: 40/@rem 0;
+      border-top: 1px solid #f3f3f3;
+      .shopImg{
+        width: 100/@rem;
+        height: 100/@rem;
+        border-radius: 8/@rem;
+        background-color: #EF508D;
+        overflow: hidden;
+        float: left;
+        img{
+          width: 100%;
+        }
+      }
+      .shopMessage{
+        width: 370/@rem;
+        margin-left: 130/@rem;
+        font-size: 26/@rem;
+        color: #666666;
+        .shopName{
+          font-size: 30/@rem;
+          color: #333333;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
+        .tel{
+          margin-top: 24/@rem;
+          margin-bottom: 14/@rem;
+        }
+        .address{
+          line-height: 30/@rem;
+        }
+      }
+      .adAndTel{
+        font-size: 0;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        //height: 100%;
+        margin-top: -15/@rem;
+        img{
+          width: 44/@rem;
+          vertical-align: middle;
+        }
+        .verticalLine{
+          display: inline-block;
+          width: 2/@rem;
+          height: 30/@rem;
+          background-color: #DCDCDC;
+          vertical-align: middle;
+          margin: 0 26/@rem;
+        }
+      }
+    }
+  }
+}
+.hasShopSelect{
+  box-sizing: border-box;
+  padding:0 30/@rem;
+}
+.ReservationShopList{
+  width: 100%;
+  .ReservationShopItem{
+    position: relative;
+    box-sizing: border-box;
+    padding: 40/@rem 0;
+    border-top: 1px solid #f3f3f3;
+    .shopImg{
+      width: 100/@rem;
+      height: 100/@rem;
+      border-radius: 8/@rem;
+      background-color: #EF508D;
+      overflow: hidden;
+      float: left;
+      img{
+        width: 100%;
+      }
+    }
+    .shopMessage{
+      width: 370/@rem;
+      margin-left: 130/@rem;
+      font-size: 26/@rem;
+      color: #666666;
+      .shopName{
+        font-size: 30/@rem;
+        color: #333333;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .tel{
+        margin-top: 24/@rem;
+        margin-bottom: 14/@rem;
+      }
+      .address{
+        line-height: 30/@rem;
+      }
+    }
+    .adAndTel{
+      font-size: 0;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      //height: 100%;
+      margin-top: -15/@rem;
+      img{
+        width: 44/@rem;
+        vertical-align: middle;
+      }
+      .verticalLine{
+        display: inline-block;
+        width: 2/@rem;
+        height: 30/@rem;
+        background-color: #DCDCDC;
+        vertical-align: middle;
+        margin: 0 26/@rem;
+      }
+    }
+  }
+}
+
+
+/*省级联动*/
+div.drum-wrapper {
+  position: relative; /*-webkit-touch-callout:none;-webkit-user-select:none;*/
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 30px
+}
+
+div.drum-wrapper .inner {
+  position: relative;
+  overflow: hidden
+}
+
+div.drum-wrapper div.container {
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  left: 0;
+  -webkit-perspective: 1100px;
+  -moz-perspective: 1100px;
+  -o-perspective: 1100px;
+  perspective: 1100px
+}
+
+div.drum-wrapper, div.drum-wrapper .inner {
+  height: 120px
+}
+
+.outside div.drum-wrapper {
+  height: 140px
+}
+
+.outside div.drum-wrapper .inner {
+  top: 12px
+}
+
+.outside div.drum-wrapper .container {
+  top: 46px
+}
+
+div.drum-wrapper .dial {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  height: 48px;
+  background-color: rgba(255, 255, 255, .7);
+  display: none
+}
+
+.outside div.drum-wrapper .dial {
+  height: 58px
+}
+
+div.drum-wrapper .dial div {
+  width: 20px;
+  height: 10px;
+  margin: 0 auto
+}
+
+div.drum-wrapper .dial svg {
+  position: absolute
+}
+
+div.drum-wrapper .up {
+  top: 0
+}
+
+div.drum-wrapper .up svg {
+  top: 2px
+}
+
+div.drum-wrapper .down {
+  bottom: 0
+}
+
+div.drum-wrapper .down svg {
+  bottom: 2px
+}
+
+div.drum {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d
+}
+
+div.drum figure {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 20px;
+  color: #000;
+  margin: 0;
+  padding: 0 3px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+}
+
+div.drum-wrapper div.container, div.drum-wrapper figure {
+  height: 25px;
+  line-height: 25px
+}
+
+div.drum-wrapper div.container, div.drum-wrapper figure {
+  height: 36px;
+  line-height: 36px;
+}
+
+div.drum-wrapper, div.drum-wrapper .inner {
+  height: 140px;
+}
+
+div.drum figure {
+  font-size: 14px;
+}
+
+.select-dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: rgba(0, 0, 0, .4);
+  -webkit-transform: translate3d(0, 100%, 0);
+}
+
+.select-dialog.show {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.select-cnt {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 100px;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #ededed;
+  pointer-events: auto;
+  -webkit-transform: translateY(100%);
+}
+
+.select-action {
+  height: 40px;
+  line-height: 40px;
+  color: #1a1a1a;
+  padding: 0 12px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.select-action button {
+  height: 40px;
+  font-size: 16px;
+  background: none;
+  -webkit-appearance: none;
+}
+
+.select-action .cencelBtn {
+  float: left;
+}
+
+.select-action .submitBtn {
+  float: right;
+}
+
+.select-dialog .select-cnt:after {
+  position: absolute;
+  content: ' ';
+  left: 0;
+  top: 98px;
+  width: 100%;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  pointer-events: none;
+}
+
+.select-action .submitBtn:disabled {
+  color: #1a1a1a;
+  opacity: 1;
+}
+
+#address .drum-wrapper {
+  float: left;
+  width: 33.33%;
+  padding: 10px 0;
+}
+
+#address .border {
+  display: none;
+}
+
+#book-time .drum-wrapper {
+  float: left;
+  width: 50%;
+  padding: 10px 0;
+}
+
+#book-time .select-cnt:before {
+  position: absolute;
+  content: ' ';
+  left: 50%;
+  top: 50px;
+  width: 1px;
+  height: 70%;
+  background: -webkit-radial-gradient(50% 50%, circle, #ebbd30, rgba(255, 255, 255, .0));
+}
+
+.select-dialog.show .select-cnt {
+  -webkit-transform: translate3d(0, 0, 0);
+  transition: 350ms ease-in-out;
+}
+
+.select-dialog .select-cnt {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transition: 350ms ease-in-out;
+}
+
+#drum_times div.drum figure {
+  text-align: left;
+  text-indent: 2.2em;
+}
+
+input, button, textarea {
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  border-radius: 0;
+}
+
+

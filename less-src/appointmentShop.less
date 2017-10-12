@@ -1,0 +1,126 @@
+@rem: 46.875rem;
+body {
+  //height: 4000px;
+  background-color: #f3f3f3;
+}
+//头部
+.navScare{
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 65/@rem 30/@rem 30/@rem 30/@rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 34/@rem;
+  line-height: 34/@rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack{
+  width: 20/@rem;
+  float: left;
+}
+.navScare .iconMore{
+  width: 44/@rem;
+  float: right;
+  margin-top: 10/@rem;
+}
+.navScare .iconShare{
+  width: 38/@rem;
+  float: right;
+  margin-right: 40/@rem;
+}
+.shopWrapper{
+  margin-top: 130/@rem;
+  background-color: #ffffff;
+}
+.ReservationShop{
+  box-sizing: border-box;
+  padding:0 30/@rem;
+  border-bottom: 20/@rem solid #f3f3f3;
+  .ReservationHead{
+    line-height: 100/@rem;
+    .iconReservation{
+      width: 30/@rem;
+      vertical-align: middle;
+    }
+    .text{
+      font-size: 30/@rem;
+      color: #333333;
+    }
+    .moreShop{
+      font-size: 26/@rem;
+      color: #666666;
+      float: right;
+      margin-right: 20/@rem;
+    }
+    .btnRight{
+      width: 16/@rem;
+      float: right;
+      margin-top: 40/@rem;
+    }
+  }
+  .ReservationShopList{
+    width: 100%;
+    .ReservationShopItem{
+      position: relative;
+      box-sizing: border-box;
+      padding: 40/@rem 0;
+      border-top: 1px solid #f3f3f3;
+      .shopImg{
+        width: 100/@rem;
+        height: 100/@rem;
+        border-radius: 8/@rem;
+        background-color: #EF508D;
+        overflow: hidden;
+        float: left;
+        img{
+          width: 100%;
+        }
+      }
+      .shopMessage{
+        width: 370/@rem;
+        margin-left: 130/@rem;
+        font-size: 26/@rem;
+        color: #666666;
+        .shopName{
+          font-size: 30/@rem;
+          color: #333333;
+          white-space:nowrap;
+          overflow:hidden;
+          text-overflow:ellipsis;
+        }
+        .tel{
+          margin-top: 24/@rem;
+          margin-bottom: 14/@rem;
+        }
+        .address{
+          line-height: 30/@rem;
+        }
+      }
+      .adAndTel{
+        font-size: 0;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        //height: 100%;
+        margin-top: -15/@rem;
+        img{
+          width: 44/@rem;
+          vertical-align: middle;
+        }
+        .verticalLine{
+          display: inline-block;
+          width: 2/@rem;
+          height: 30/@rem;
+          background-color: #DCDCDC;
+          vertical-align: middle;
+          margin: 0 26/@rem;
+        }
+      }
+    }
+  }
+}

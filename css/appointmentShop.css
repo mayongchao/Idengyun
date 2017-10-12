@@ -1,0 +1,122 @@
+body {
+  background-color: #f3f3f3;
+}
+.navScare {
+  background-color: #ffffff;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1.3866666666666667rem 0.64rem 0.64rem 0.64rem;
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.7253333333333334rem;
+  line-height: 0.7253333333333334rem;
+  text-align: center;
+  color: #333333;
+}
+.navScare .iconBack {
+  width: 0.4266666666666667rem;
+  float: left;
+}
+.navScare .iconMore {
+  width: 0.9386666666666666rem;
+  float: right;
+  margin-top: 0.21333333333333335rem;
+}
+.navScare .iconShare {
+  width: 0.8106666666666666rem;
+  float: right;
+  margin-right: 0.8533333333333334rem;
+}
+.shopWrapper {
+  margin-top: 2.7733333333333334rem;
+  background-color: #ffffff;
+}
+.ReservationShop {
+  box-sizing: border-box;
+  padding: 0 0.64rem;
+  border-bottom: 0.4266666666666667rem solid #f3f3f3;
+}
+.ReservationShop .ReservationHead {
+  line-height: 2.1333333333333333rem;
+}
+.ReservationShop .ReservationHead .iconReservation {
+  width: 0.64rem;
+  vertical-align: middle;
+}
+.ReservationShop .ReservationHead .text {
+  font-size: 0.64rem;
+  color: #333333;
+}
+.ReservationShop .ReservationHead .moreShop {
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  float: right;
+  margin-right: 0.4266666666666667rem;
+}
+.ReservationShop .ReservationHead .btnRight {
+  width: 0.3413333333333333rem;
+  float: right;
+  margin-top: 0.8533333333333334rem;
+}
+.ReservationShop .ReservationShopList {
+  width: 100%;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0.8533333333333334rem 0;
+  border-top: 1px solid #f3f3f3;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .shopImg {
+  width: 2.1333333333333333rem;
+  height: 2.1333333333333333rem;
+  border-radius: 0.17066666666666666rem;
+  background-color: #EF508D;
+  overflow: hidden;
+  float: left;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .shopImg img {
+  width: 100%;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .shopMessage {
+  width: 7.8933333333333335rem;
+  margin-left: 2.7733333333333334rem;
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .shopMessage .shopName {
+  font-size: 0.64rem;
+  color: #333333;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .shopMessage .tel {
+  margin-top: 0.512rem;
+  margin-bottom: 0.2986666666666667rem;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .shopMessage .address {
+  line-height: 0.64rem;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .adAndTel {
+  font-size: 0;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  margin-top: -0.32rem;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .adAndTel img {
+  width: 0.9386666666666666rem;
+  vertical-align: middle;
+}
+.ReservationShop .ReservationShopList .ReservationShopItem .adAndTel .verticalLine {
+  display: inline-block;
+  width: 0.042666666666666665rem;
+  height: 0.64rem;
+  background-color: #DCDCDC;
+  vertical-align: middle;
+  margin: 0 0.5546666666666666rem;
+}
