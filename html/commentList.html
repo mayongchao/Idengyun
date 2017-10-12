@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0,user-scalable=no">
+    <title>评论列表</title>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <!--需要修改引入对应的css-->
+    <link rel="stylesheet" href="../css/commentList.css">
+    <!--需要修改引入对应的css-->
+</head>
+<body>
+<div class="comListWrapper">
+    <!--列表头部-->
+    <div class="navScare">
+        <img src="../images/btn_nav_jump@2x.png" alt="" class="iconBack">
+        <img src="../images/btn_nav_more@2x.png" alt="" class="iconMore">
+        评论
+        <!--<img src="../images/btn_nav_share@2x.png" alt="" class="iconShare">-->
+    </div>
+
+    <div class="comListTab">
+        <div class="newest">最新</div>
+        <div class="line"></div>
+        <div class="hottest">最热</div>
+    </div>
+    <ul class="comList">
+        <li class="comItem">
+            <div class="userListHeader">
+                <div class="userHeader clearfix">
+                    <div class="userImg">
+                        <img src="../images/customer01.png" alt="">
+                    </div>
+                    <p class="like">
+                        <img src="../images/icon_Give_the_thumbs_up_n@2x.png" alt="">
+                        <i>213</i>
+                    </p>
+                    <p class="userMessage">
+                        Bridge
+                        <img src="../images/icon_grade-level@2x.png" alt="">
+
+                        <span class="levelNum">
+                    2
+                </span>
+                    </p>
+                    <p class="userText">
+                        2017-08-25  18:20
+                    </p>
+                </div>
+            </div>
+            <p class="comContent">
+                老子吃火锅你吃火锅底料,对你笑呵呵,因为我讲礼貌狠货有好多,个人拿去比较,包包头摸摸这个月才几号。
+            </p>
+            <ul class="replyList" style="display: none">
+                <li class="replyItem">
+                    <span class="userName">妹妹<i>：</i></span>为保长城不倒，烈马长枪握好，眼看时间不早，对的起江东父老。
+                </li>
+                <li class="replyItem">
+                    <span class="userName">姐姐<i>：</i></span>一往无前虎山行，拨开云雾见光明，梦里花开牡丹亭，幻想成真歌舞升平。
+                </li>
+            </ul>
+            <div class="lookforAllReply" style="display: none">
+                查看全部回复
+                <img src="../images/rightTwo.png" alt="">
+            </div>
+        </li>
+        <li class="comItem">
+            <div class="userListHeader">
+                <div class="userHeader clearfix">
+                    <div class="userImg">
+                        <img src="../images/customer01.png" alt="">
+                    </div>
+                    <p class="like">
+                        <img src="../images/icon_Give_the_thumbs_up_n@2x.png" alt="">
+                        <i>213</i>
+                    </p>
+                    <p class="userMessage">
+                        Bridge
+                        <img src="../images/icon_grade-level@2x.png" alt="">
+
+                        <span class="levelNum">
+                    2
+                </span>
+                    </p>
+                    <p class="userText">
+                        2017-08-25  18:20
+                    </p>
+                </div>
+            </div>
+            <p class="comContent">
+                老子吃火锅你吃火锅底料,对你笑呵呵,因为我讲礼貌狠货有好多,个人拿去比较,包包头摸摸这个月才几号。
+            </p>
+            <ul class="replyList" style="display: block">
+                <li class="replyItem">
+                    <span class="userName">妹妹<i>：</i></span>为保长城不倒，烈马长枪握好，眼看时间不早，对的起江东父老。
+                </li>
+                <li class="replyItem">
+                    <span class="userName">姐姐<i>：</i></span>一往无前虎山行，拨开云雾见光明，梦里花开牡丹亭，幻想成真歌舞升平。
+                </li>
+            </ul>
+            <div class="lookforAllReply" style="display: block">
+                查看全部回复
+                <img src="../images/rightTwo.png" alt="">
+            </div>
+        </li>
+    </ul>
+
+</div>
+
+<script type="text/javascript" src="../js/rem.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+<!--<script type="text/javascript" src="../js/active.js"></script>-->
+<script type="text/javascript">
+   $(function () {
+       like()
+       //点赞
+       function like() {
+           $('.like>img').click(function () {
+               if($(this).next().hasClass('active')){
+                   return
+               }
+               $(this).attr({src:'../images/icon_Give_the_thumbs_up@2x.png'}).next().text(parseInt($(this).next().text())+1)
+               $(this).next().addClass('active')
+           })
+       }
+   })
+</script>
+</body>
+</html>
