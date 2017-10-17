@@ -21,11 +21,11 @@
         <!--<img src="../images/btn_nav_share@2x.png" alt="" class="iconShare">-->
     </div>
 
-    <div class="comListTab">
-        <div class="newest">最新</div>
+    <ul class="comListTab">
+        <li class="newest active">最新</li>
         <div class="line"></div>
-        <div class="hottest">最热</div>
-    </div>
+        <li class="hottest">最热</li>
+    </ul>
     <ul class="comList">
         <li class="comItem">
             <div class="userListHeader">
@@ -124,6 +124,13 @@
                }
                $(this).attr({src:'../images/icon_Give_the_thumbs_up@2x.png'}).next().text(parseInt($(this).next().text())+1)
                $(this).next().addClass('active')
+           })
+       }
+       switchTab()
+       function switchTab() {
+           $('.comListTab>li').click(function () {
+               $(this).siblings().removeClass('active')
+                $(this).addClass('active')
            })
        }
    })

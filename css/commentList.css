@@ -50,6 +50,9 @@ body {
   background-color: #e8e8e8;
   align-self: center;
 }
+.active {
+  color: #EF508D;
+}
 .comList {
   background-color: #ffffff;
 }

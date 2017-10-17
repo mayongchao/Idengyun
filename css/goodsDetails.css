@@ -431,7 +431,7 @@
   z-index: 100;
 }
 .footer .consult {
-  width: 3.3066666666666666rem;
+  width: 4.586666666666667rem;
   height: 2.56rem;
   font-size: 0.5546666666666666rem;
   color: #666666;
@@ -445,7 +445,7 @@
   margin: 0.384rem auto;
 }
 .footer .collect {
-  width: 3.3066666666666666rem;
+  width: 4.586666666666667rem;
   height: 2.56rem;
   font-size: 0.5546666666666666rem;
   color: #666666;
@@ -457,7 +457,49 @@
   display: block;
   margin: 0.384rem auto;
 }
-.footer .intoShopCart {
+.footer .buyNow {
+  width: 6.826666666666667rem;
+  height: 2.56rem;
+  font-size: 0.64rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.56rem;
+  background-color: #ff5a99;
+}
+.goodsFooter {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+.goodsFooter .consult {
+  width: 3.3066666666666666rem;
+  height: 2.56rem;
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  background-color: #ffffff;
+  border-right: 1px solid #EEEEEE;
+  text-align: center;
+}
+.goodsFooter .consult img {
+  display: block;
+  width: 0.8533333333333334rem;
+  margin: 0.384rem auto;
+}
+.goodsFooter .collect {
+  width: 3.3066666666666666rem;
+  height: 2.56rem;
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  background-color: #ffffff;
+  text-align: center;
+}
+.goodsFooter .collect img {
+  width: 0.8533333333333334rem;
+  display: block;
+  margin: 0.384rem auto;
+}
+.goodsFooter .intoShopCart {
   width: 4.693333333333333rem;
   height: 2.56rem;
   font-size: 0.64rem;
@@ -466,7 +508,7 @@
   line-height: 2.56rem;
   background-color: #ff89b7;
 }
-.footer .buyNow {
+.goodsFooter .buyNow {
   width: 4.693333333333333rem;
   height: 2.56rem;
   font-size: 0.64rem;

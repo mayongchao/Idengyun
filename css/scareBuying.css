@@ -32,6 +32,7 @@
   white-space: nowrap;
   overflow: hidden;
   overflow-x: scroll;
+  margin-top: 2.56rem;
   background-color: #ffffff;
   position: fixed;
   top: 0;
@@ -71,7 +72,7 @@
   margin: 40/@rem 0;
 }*/
 .list {
-  margin-top: 2.453333333333333rem;
+  margin-top: 5.013333333333334rem;
 }
 .scarebuy {
   box-sizing: border-box;

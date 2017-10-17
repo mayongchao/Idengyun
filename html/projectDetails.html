@@ -150,32 +150,19 @@
                 <li class="navItem activeShowItem">
                     商品详情
                 </li>
-                <li class="navItem">
+                <li class="navItem navShow" >
                     相关案例
                 </li>
                 <li class="navItem">
                     看谁买了
                 </li>
-                <li class="navItem">
+                <li class="navItem navShow" >
                     相关店铺
                 </li>
             </ul>
         </div>
 
-        <!--<ul class="onTop" style="display: none">
-            <li class="navItem activeShowItem">
-                商品详情
-            </li>
-            <li class="navItem">
-                相关案例
-            </li>
-            <li class="navItem">
-                看谁买了
-            </li>
-            <li class="navItem">
-                相关店铺
-            </li>
-        </ul>-->
+
         <!--项目详情列表-->
         <div class="DetailNavList">
             <!--商品详情-->
@@ -606,9 +593,31 @@
                 立即购买
             </div>
         </div>
+        <!--商品详情页footer-->
+        <div class="goodsFooter"style="display: none" >
+            <div class="consult">
+                <img src="../images/consultIcon.png" alt="">
+                在线咨询
+            </div>
+            <div class="collect">
+                <img src="../images/btn_icon_collected@2x.png" alt="">
+                收藏
+            </div>
+            <div class="intoShopCart">
+                加入购物车
+            </div>
+            <div class="buyNow">
+                立即购买
+            </div>
+        </div>
         <!--goTop-->
         <div class="goTop">
             <img src="../images/btn_Back-to-the-top@2x.png" alt="">
+        </div>
+        <!--shopCar-->
+        <div class="shopCarBox" style="display: none">
+            <img src="../images/shopCar.png" alt="">
+            <span class="iconBall" style="display: block"></span>
         </div>
         <!-- sku虚拟属性弹层 -->
         <input type="hidden" id="countTotal" value="10000">
@@ -861,6 +870,28 @@
                 $(this).next().addClass('active')
             })
         }
+        /*根据条件判断先关案例和相关店铺是否出现以及底部footer切换 shopcar切换*/
+        if(false){
+            navShow()
+            footerShow()
+            shopcarShow()
+        }
+
+        function navShow() {
+            $('.navShow').hide()
+            $('.DetailNav').css({'justify-content':'space-around'})
+        }
+
+        function footerShow() {
+            $('.footer').hide()
+            $('.goodsFooter').show()
+        }
+
+        function shopcarShow() {
+            $('.shopCarBox').show()
+            $('.goTop').css({'bottom':'7.68rem'})
+        }
+
     })
 </script>
 </body>

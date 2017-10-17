@@ -466,6 +466,57 @@
   line-height: 2.56rem;
   background-color: #ff5a99;
 }
+.goodsFooter {
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  z-index: 100;
+}
+.goodsFooter .consult {
+  width: 3.3066666666666666rem;
+  height: 2.56rem;
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  background-color: #ffffff;
+  border-right: 1px solid #EEEEEE;
+  text-align: center;
+}
+.goodsFooter .consult img {
+  display: block;
+  width: 0.8533333333333334rem;
+  margin: 0.384rem auto;
+}
+.goodsFooter .collect {
+  width: 3.3066666666666666rem;
+  height: 2.56rem;
+  font-size: 0.5546666666666666rem;
+  color: #666666;
+  background-color: #ffffff;
+  text-align: center;
+}
+.goodsFooter .collect img {
+  width: 0.8533333333333334rem;
+  display: block;
+  margin: 0.384rem auto;
+}
+.goodsFooter .intoShopCart {
+  width: 4.693333333333333rem;
+  height: 2.56rem;
+  font-size: 0.64rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.56rem;
+  background-color: #ff89b7;
+}
+.goodsFooter .buyNow {
+  width: 4.693333333333333rem;
+  height: 2.56rem;
+  font-size: 0.64rem;
+  color: #ffffff;
+  text-align: center;
+  line-height: 2.56rem;
+  background-color: #ff5a99;
+}
 .userList {
   box-sizing: border-box;
   padding: 0 0.64rem;
@@ -841,6 +892,26 @@ i.active {
 .goTop img {
   display: block;
   width: 2.1333333333333333rem;
+}
+.shopCarBox {
+  position: fixed;
+  bottom: 5.333333333333333rem;
+  right: 0.64rem;
+  width: 2.2186666666666666rem;
+  display: inline-block;
+}
+.shopCarBox img {
+  width: 100%;
+  display: block;
+}
+.shopCarBox .iconBall {
+  width: 0.32rem;
+  height: 0.32rem;
+  background-color: #ef508d;
+  border-radius: 50%;
+  position: absolute;
+  top: 0.64rem;
+  right: 0.4266666666666667rem;
 }
 .reserve {
   position: fixed;
