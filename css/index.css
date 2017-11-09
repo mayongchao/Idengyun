@@ -367,6 +367,8 @@
 .recommendedactivities-wrapper .ra-items-odd {
   background: #fafafa;
 }
+/*****************************************************/
+
 .float-right {
   float: left;
 }
@@ -490,7 +492,6 @@
 }
 .live-beautiful-content .swip li {
   width: 7.1466666666666665rem;
-  height: 7.1466666666666665rem;
   border-radius: 0.128rem;
   float: left;
   position: relative;
@@ -501,15 +502,14 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: 0.512rem;
-  line-height: 0.5546666666666666rem;
+  line-height: 1.1946666666666668rem;
 }
 .live-beautiful-content .swip li .livingNum {
   font-size: 0.512rem;
   color: #ffffff;
   position: absolute;
   right: 0.21333333333333335rem;
-  bottom: 0.4266666666666667rem;
+  bottom: 1.4933333333333334rem;
 }
 .live-beautiful-content .swip li .livingNum img {
   width: 0.4693333333333333rem;
@@ -533,7 +533,6 @@
 }
 .swiper04 {
   position: relative;
-  padding-bottom: 2.432rem;
 }
 .swiper04 .swiper-pagination {
   position: absolute;

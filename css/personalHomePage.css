@@ -49,8 +49,7 @@
 .personHome .personPage {
   width: 100%;
   height: 11.733333333333333rem;
-  background: url("../images/personalHome.jpg") center no-repeat;
-  background-size: 100%;
+  /*background: url("../images/personalHome.jpg") center no-repeat;*/
   filter: blur(5px);
 }
 .personHome .shade {
@@ -70,8 +69,6 @@
   margin: 0 auto;
   margin-top: 3.2rem;
   overflow: hidden;
-  background: url("../images/personalHome.jpg") center no-repeat;
-  background-size: cover;
 }
 .personHome .shade .personName {
   font-size: 0.5973333333333334rem;
@@ -185,6 +182,7 @@
   width: 0.5333333333333333rem;
   height: 0.5333333333333333rem;
   vertical-align: top;
+  margin-right: 0.21333333333333335rem;
 }
 .userList .userHeader .userMessage .levelNum {
   color: #ef508d;
@@ -303,6 +301,7 @@
 .userList {
   box-sizing: border-box;
   padding: 0 0.64rem;
+  border-bottom: 0.21333333333333335rem solid #f3f3f3;
 }
 .userHeader {
   position: relative;
@@ -312,10 +311,12 @@
   width: 1.28rem;
   height: 1.28rem;
   border-radius: 50%;
-  background-image: url("../images/userImg01.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   float: left;
+}
+.userHeader .userImg img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 .userHeader .userMessage {
   font-size: 0.5973333333333334rem;
@@ -374,10 +375,13 @@
   background-color: red;
 }
 .userPhoto .left {
-  background: url("../images/userBefore.png") center no-repeat;
-  background-size: 100%;
   float: left;
   position: relative;
+  overflow: hidden;
+}
+.userPhoto .left img {
+  width: 100%;
+  height: 100%;
 }
 .userPhoto .left .before,
 .userPhoto .right .after {
@@ -395,9 +399,12 @@
 }
 .userPhoto .right {
   position: relative;
-  background: url("../images/userAfter.png") center no-repeat;
-  background-size: 100%;
   float: right;
+  overflow: hidden;
+}
+.userPhoto .right img {
+  width: 100%;
+  height: 100%;
 }
 .userComment {
   font-size: 0.5973333333333334rem;
@@ -445,20 +452,13 @@
   font-size: 0.5546666666666666rem;
   color: #B8B8B8;
 }
-.userShow {
+.articleWrapper {
   box-sizing: border-box;
   padding: 0 0.64rem;
   height: 8.853333333333333rem;
   border-bottom: 0.21333333333333335rem solid #eeeeee;
 }
-/*.userShow .userHeader .follow .fllowTest{
-  color: #999999;
-}
-.userShow .userHeader .follow{
-  width: 115/@rem;
-  border: 1px solid #999;
-}*/
-.userShow .userTitle {
+.articleWrapper .userTitle {
   font-size: 0.7253333333333334rem;
   color: #000000;
   white-space: nowrap;
@@ -467,20 +467,20 @@
   line-height: 0.7253333333333334rem;
   margin: 0.7466666666666667rem 0 0.64rem 0;
 }
-.userShow .userText {
+.articleWrapper .userText {
   position: relative;
 }
-.userShow .userText .viewP {
+.articleWrapper .userText .viewP {
   position: absolute;
   right: 5.12rem;
   bottom: -1.28rem;
 }
-.userShow .userText .userProShow {
+.articleWrapper .userText .userProShow {
   position: absolute;
   left: 0;
   bottom: -1.28rem;
 }
-.userShow .userText .userTextLeft {
+.articleWrapper .userText .userTextLeft {
   font-size: 0.5546666666666666rem;
   color: #999;
   width: 9.6rem;
@@ -494,28 +494,61 @@
   -webkit-box-orient: vertical;
   float: left;
 }
-.userShow .userText .iconLink {
+.articleWrapper .userText .iconLink {
   background: url("../images/btn_Article-links@2x.png") no-repeat;
   background-size: 100%;
 }
-.userShow .userTextRight {
+.articleWrapper .userTextRight {
   width: 4.266666666666667rem;
   height: 4.266666666666667rem;
-  background: url("../images/userShowImg.png") no-repeat;
-  background-size: 100%;
+  /*  background: url("../images/userShowImg.png") no-repeat;
+    background-size: 100%;*/
   border-radius: 0.17066666666666666rem;
   position: absolute;
   top: 0;
   right: 0;
 }
-.userShow .userTextRight .imgNum {
+.articleWrapper .userTextRight img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.articleWrapper .userTextRight .imgNum {
   font-size: 0.5546666666666666rem;
   color: #ffffff;
   position: absolute;
   right: 0.21333333333333335rem;
   bottom: 0.21333333333333335rem;
 }
-.swiper06 .swiper-wrapper .swiper-slide img {
+/*底部loading图*/
+.loadingImg {
+  width: 100%;
+  height: 4.693333333333333rem;
+  font-size: 0.512rem;
+  color: #000000;
+  line-height: 4.693333333333333rem;
+  background-color: #F3F3F3 ;
+  text-align: center;
+}
+.loadingImg img {
+  width: 2.3466666666666667rem;
+  vertical-align: middle;
+}
+.Swiper04 li {
+  display: inline;
+}
+.mescroll-downwarp .downwarp-tip,
+.mescroll-upwarp .upwarp-tip,
+.mescroll-upwarp .upwarp-nodata {
+  width: 100%;
+  line-height: 2.56rem;
+  display: inline-block;
+  font-size: 0.512rem;
+  color: #666666;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+.bigPhotoShow .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
 .bigPhotoShow {
@@ -529,14 +562,43 @@
   display: flex;
   align-items: center;
 }
-.swiper06 .swiper-wrapper {
+.bigPhotoShow .swiper-wrapper {
   height: 100%;
   display: flex;
   align-items: center;
 }
-.swiper06 .swiper-wrapper .swiper-slide {
+.bigPhotoShow .swiper-wrapper .swiper-slide {
   align-self: center;
 }
-.swiper06 .swiper-wrapper .swiper-slide a {
+.bigPhotoShow .swiper-wrapper .swiper-slide a {
   display: inline-block;
+}
+.flex-viewport,
+.slides,
+.images {
+  height: 100%;
+}
+.shade {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  /*display: none;*/
+}
+.shade .flexslider {
+  /*margin-top: 30%;*/
+  height: 100%;
+}
+.flexslider {
+  background: none;
+  border: none;
+}
+.shade .flexslider .slides li {
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }

@@ -6,6 +6,8 @@
     <title>个人主页</title>
     <link rel="stylesheet" href="../css/reset.css">
     <link rel="stylesheet" href="../css/swiper-3.4.2.min.css">
+    <link rel="stylesheet" href="../css/mescroll.min.css">
+    <link rel="stylesheet" href="../css/flexslider.css">
     <!--需要修改引入对应的css-->
     <link rel="stylesheet" href="../css/personalHomePage.css">
     <!--需要修改引入对应的css-->
@@ -13,7 +15,7 @@
 <body>
     <div class="personWarpper">
         <!--个人主页导航-->
-       <!-- <div class="navShopGray" style="background-color: #ffffff;color: #000000;opacity: 0;z-index: 1000000">
+        <!--<div class="navShopGray" style="background-color: #ffffff;color: #000000;opacity: 0;z-index: 1000000">
             <img src="../images/btn_nav_jump@2x.png" alt="" class="iconBack">
             <img src="../images/btn_nav_more@2x.png" alt="" class="iconMore">
             <img src="../images/btn_nav_share@2x.png" alt="" class="iconShare">
@@ -27,10 +29,10 @@
         </div>-->
         <!--个人主页-->
         <div class="personHome">
-            <div class="personPage">
+            <div class="personPage" style="background: url('../images/personalHome.jpg') center no-repeat; background-size: 100%;">
             </div>
             <div class="shade">
-                <div class="personHeader"></div>
+                <div class="personHeader" style="background: url('../images/personalHome.jpg') center no-repeat;background-size: cover;"></div>
                 <div class="personName">
                     Vivian Lee
                     <img src="../images/icon_girl@2x.png" alt="" class="gender">
@@ -66,21 +68,21 @@
         <!--文章与日记Header-->
         <div class="fixHeight">
             <ul class="shopList">
-                <li class="shopItem activeShowItem">
+                <li class="shopItem activeShowItem" i="0">
                     文章
                 </li>
-                <li class="shopItem">
+                <li class="shopItem" i="1">
                     日志
                 </li>
             </ul>
         </div>
 
         <!--日记-->
-        <div class="shopCase" style="display: none">
-            <div class="userList">
+        <ul class="shopCase" style="display: none">
+           <!-- <li class="userList">
                 <div class="userHeader clearfix">
                     <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
+                        &lt;!&ndash;<img src="../images/userImg01.png" alt="">&ndash;&gt;
                     </div>
                     <p class="userMessage">
                         天使BABY
@@ -116,7 +118,7 @@
                     不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
                 </div>
                 <div class="userPro">
-                    <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
+                    &lt;!&ndash;<img src="../images/icon_Commodity-link@2x.png" alt="">&ndash;&gt;
                     <span class="iconCom"></span>
                     <span class="userProName">
             泰妍雅集丰韵套装
@@ -124,507 +126,32 @@
                 </div>
                 <div class="attention">
                     <div class="view">
-                        <!--<span class="viewImg"></span>-->
+                        &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                         <img src="../images/icon_browse@2x.png" alt="">
                         <span class="viewNum">
                     2.16万
                 </span>
                     </div>
                     <div class="support">
-                        <!--<span class="viewImg"></span>-->
+                        &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                         <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
                         <span class="viewNum">
                     2.16万
                 </span>
                     </div>
                     <div class="comment">
-                        <!--<span class="viewImg"></span>-->
+                        &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                         <img src="../images/icon_comment@2x.png" alt="">
                         <span class="viewNum">
                     2.16万
                 </span>
                     </div>
                 </div>
-            </div>
-            <!--分割线-->
-            <!--<div class="shopLineTwo"></div>-->
-
-            <div class="userList">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        天使BABY
-                        <img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                    2
-                </span>
-                    </p>
-                    <p class="userText">
-                        一分钟前
-                    </p>
-                    <div class="follow">
-                <span class="followImg">
-                    <img src="../images/btn_one_n@2x.png" alt="">
-                </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userPhoto clearfix">
-                    <div class="left">
-                        <div class="before">
-                            Before
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="after">
-                            After
-                        </div>
-                    </div>
-                </div>
-                <div class="userComment">
-                    不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
-                </div>
-                <div class="userPro">
-                    <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                    <span class="iconCom"></span>
-                    <span class="userProName">
-                泰妍雅集丰韵套装
-            </span>
-                </div>
-                <div class="attention">
-                    <div class="view">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                    <div class="support">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                    <div class="comment">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_comment@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                </div>
-            </div>
-            <div class="userList">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        天使BABY
-                        <img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                    2
-                </span>
-                    </p>
-                    <p class="userText">
-                        一分钟前
-                    </p>
-                    <div class="follow">
-                <span class="followImg">
-                    <img src="../images/btn_one_n@2x.png" alt="">
-                </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userPhoto clearfix">
-                    <div class="left">
-                        <div class="before">
-                            Before
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="after">
-                            After
-                        </div>
-                    </div>
-                </div>
-                <div class="userComment">
-                    不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
-                </div>
-                <div class="userPro">
-                    <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                    <span class="iconCom"></span>
-                    <span class="userProName">
-                泰妍雅集丰韵套装
-            </span>
-                </div>
-                <div class="attention">
-                    <div class="view">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                    <div class="support">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                    <div class="comment">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_comment@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                </div>
-            </div>
-            <div class="userList">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        天使BABY
-                        <img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                    2
-                </span>
-                    </p>
-                    <p class="userText">
-                        一分钟前
-                    </p>
-                    <div class="follow">
-                <span class="followImg">
-                    <img src="../images/btn_one_n@2x.png" alt="">
-                </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userPhoto clearfix">
-                    <div class="left">
-                        <div class="before">
-                            Before
-                        </div>
-                    </div>
-                    <div class="right">
-                        <div class="after">
-                            After
-                        </div>
-                    </div>
-                </div>
-                <div class="userComment">
-                    不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
-                </div>
-                <div class="userPro">
-                    <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                    <span class="iconCom"></span>
-                    <span class="userProName">
-                泰妍雅集丰韵套装
-            </span>
-                </div>
-                <div class="attention">
-                    <div class="view">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                    <div class="support">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                    <div class="comment">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_comment@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+            </li>-->
+        </ul>
         <!--文章-->
-        <ul class="personArticle">
-            <li class="userShow">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        那样最年华
-                        <!--<img src="../images/icon_grade-level@2x.png" alt="">
+        <ul class="personArticle" id="dataList">
 
-                        <span class="levelNum">
-                        2
-                    </span>-->
-                    </p>
-                    <p class="userText">
-                        美容达人
-                    </p>
-                    <div class="follow">
-                        <span class="followImg">
-                            <img src="../images/btn_one_n@2x.png" alt="">
-                        </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userTitle">
-                    最爱手作—滴胶与木头标题就一行超过就标题就一行超过就
-                </div>
-                <div class="userText clearfix">
-                    <p class="userTextLeft">
-                        为你我用了半年的积蓄，漂洋过海的来看你记忆总是慢慢慢慢的堆积在脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也
-                    </p>
-                    <div class="userPro userProShow">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                        <span class="iconCom iconLink"></span>
-                        <span class="userProName">
-                        泰妍雅集套装
-                    </span>
-                    </div>
-
-                    <div class="view viewP">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-
-
-                    <div class="userTextRight">
-                        <span class="imgNum">3张图片</span>
-                    </div>
-
-                </div>
-            </li>
-            <li class="userShow">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        那样最年华
-                        <!--<img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                        2
-                    </span>-->
-                    </p>
-                    <p class="userText">
-                        美容达人
-                    </p>
-                    <div class="follow">
-                        <span class="followImg">
-                            <img src="../images/btn_one_n@2x.png" alt="">
-                        </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userTitle">
-                    最爱手作—滴胶与木头标题就一行超过就标题就一行超过就
-                </div>
-                <div class="userText clearfix">
-                    <p class="userTextLeft">
-                        为你我用了半年的积蓄，漂洋过海的来看你记忆总是慢慢慢慢的堆积在脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也
-                    </p>
-                    <div class="userPro userProShow">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                        <span class="iconCom iconLink"></span>
-                        <span class="userProName">
-                        泰妍雅集套装
-                    </span>
-                    </div>
-
-                    <div class="view viewP">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-
-
-                    <div class="userTextRight">
-                        <span class="imgNum">3张图片</span>
-                    </div>
-
-                </div>
-            </li>
-            <li class="userShow">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        那样最年华
-                        <!--<img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                        2
-                    </span>-->
-                    </p>
-                    <p class="userText">
-                        美容达人
-                    </p>
-                    <div class="follow">
-                        <span class="followImg">
-                            <img src="../images/btn_one_n@2x.png" alt="">
-                        </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userTitle">
-                    最爱手作—滴胶与木头标题就一行超过就标题就一行超过就
-                </div>
-                <div class="userText clearfix">
-                    <p class="userTextLeft">
-                        为你我用了半年的积蓄，漂洋过海的来看你记忆总是慢慢慢慢的堆积在脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也
-                    </p>
-                    <div class="userPro userProShow">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                        <span class="iconCom iconLink"></span>
-                        <span class="userProName">
-                        泰妍雅集套装
-                    </span>
-                    </div>
-
-                    <div class="view viewP">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-
-
-                    <div class="userTextRight">
-                        <span class="imgNum">3张图片</span>
-                    </div>
-
-                </div>
-            </li>
-            <li class="userShow">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        那样最年华
-                        <!--<img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                        2
-                    </span>-->
-                    </p>
-                    <p class="userText">
-                        美容达人
-                    </p>
-                    <div class="follow">
-                        <span class="followImg">
-                            <img src="../images/btn_one_n@2x.png" alt="">
-                        </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userTitle">
-                    最爱手作—滴胶与木头标题就一行超过就标题就一行超过就
-                </div>
-                <div class="userText clearfix">
-                    <p class="userTextLeft">
-                        为你我用了半年的积蓄，漂洋过海的来看你记忆总是慢慢慢慢的堆积在脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也
-                    </p>
-                    <div class="userPro userProShow">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                        <span class="iconCom iconLink"></span>
-                        <span class="userProName">
-                        泰妍雅集套装
-                    </span>
-                    </div>
-
-                    <div class="view viewP">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-
-
-                    <div class="userTextRight">
-                        <span class="imgNum">3张图片</span>
-                    </div>
-
-                </div>
-            </li>
-            <li class="userShow">
-                <div class="userHeader clearfix">
-                    <div class="userImg">
-                        <!--<img src="../images/userImg01.png" alt="">-->
-                    </div>
-                    <p class="userMessage">
-                        那样最年华
-                        <!--<img src="../images/icon_grade-level@2x.png" alt="">
-
-                        <span class="levelNum">
-                        2
-                    </span>-->
-                    </p>
-                    <p class="userText">
-                        美容达人
-                    </p>
-                    <div class="follow">
-                        <span class="followImg">
-                            <img src="../images/btn_one_n@2x.png" alt="">
-                        </span>
-                        <span class="fllowTest">关注</span>
-                    </div>
-                </div>
-                <div class="userTitle">
-                    最爱手作—滴胶与木头标题就一行超过就标题就一行超过就
-                </div>
-                <div class="userText clearfix">
-                    <p class="userTextLeft">
-                        为你我用了半年的积蓄，漂洋过海的来看你记忆总是慢慢慢慢的堆积在脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也
-                    </p>
-                    <div class="userPro userProShow">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
-                        <span class="iconCom iconLink"></span>
-                        <span class="userProName">
-                        泰妍雅集套装
-                    </span>
-                    </div>
-
-                    <div class="view viewP">
-                        <!--<span class="viewImg"></span>-->
-                        <img src="../images/icon_browse@2x.png" alt="">
-                        <span class="viewNum">
-                        2.16万
-                    </span>
-                    </div>
-
-
-                    <div class="userTextRight">
-                        <span class="imgNum">3张图片</span>
-                    </div>
-
-                </div>
-            </li>
         </ul>
         <!--bigPhotoShow-->
         <div class="bigPhotoShow" id="bigPhoto" style="display: none">
@@ -654,45 +181,242 @@
 <script type="text/javascript" src="../js/rem.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
-<!--<script type="text/javascript" src="../js/active.js"></script>-->
+<script type="text/javascript" src="../js/mescroll.min.js"></script>
+<script type="text/javascript" src="../js/jquery.flexslider.js"></script>
+    <!--模拟数据-->
+<script type="text/javascript" src="../js/pdlist1.js"></script>
 <script type="text/javascript">
-    $(document).ready(function () {
+    $(function () {
+        /******************************************************************************************/
+        var mescroll = new MeScroll("body", {
+            down:{
+                use:false,
+                auto: true,
+                callback: function(mescroll) {
+                    //加载轮播数据
+                    //loadSwiper();
+                    //下拉刷新的回调,默认重置上拉加载列表为第一页
+                    mescroll.resetUpScroll();
+                },
+            },
+            //上拉加载的配置项
+            up: {
+                use: true,
+                callback: getListData, //上拉回调,此处可简写; 相当于 callback: function (page) { getListData(page); }
+                noMoreSize: 4, //如果列表已无数据,可设置列表的总数量要大于半页才显示无更多数据;避免列表数据过少(比如只有一条数据),显示无更多数据会不好看; 默认5
+                empty: {
+                    icon: "", //图标,默认null
+                    tip: "", //提示
+                    btntext: "", //按钮,默认""
+                    /* btnClick: function(){//点击按钮的回调,默认null
+                     /!* alert("点击了按钮,具体逻辑自行实现");*!/
+                     }*/
+                },
+                clearEmptyId: "dataList", //相当于同时设置了clearId和empty.warpId; 简化写法;默认null
+                toTop:{ //配置回到顶部按钮
+//                    src : "../res/img/mescroll-totop.png", //默认滚动到1000px显示,可配置offset修改
+                    //offset : 1000
+                },
+                page: {
+                    num: 0, //当前页 默认0,回调之前会加1; 即callback(page)会从1开始
+                    size: 10, //每页数据条数
+                    time: null //加载第一页数据服务器返回的时间; 防止用户翻页时,后台新增了数据从而导致下一页数据重复;
+                },
+//                warpClass: "mescroll-upwarp", //容器,装载布局内容,参见mescroll.css
+//                htmlLoading: '<p class="upwarp-progress mescroll-rotate"></p><p class="upwarp-tip">哈哈你看我出来不</p>', //上拉加载中的布局
+                htmlLoading: '<div class="loadingImg"><img src="../images/刷新1.gif" alt="">每一天美一点～ </div>', //上拉加载中的布局
+                htmlNodata: '<p class="upwarp-nodata">好棒，内容都被你看光光了～</p>', //无数据的布局
+            }
+        });
+        /*联网加载列表数据  page = {num:1, size:10}; num:当前页 从1开始, size:每页数据条数 */
+        function getListData(page){
+            console.log(page)
+            //联网加载数据
+            getListDataFromNet(pdType, page.num, page.size, function(curPageData){
+                console.log("pdType="+pdType+", page.num="+page.num+", page.size="+page.size+", curPageData.length="+curPageData.length);
+                mescroll.endSuccess(curPageData.length);
+                console.log(curPageData)
+                console.log(page)
 
-        var mySwiper01 = new Swiper('.swiper01', {
-            direction: 'horizontal',
-            loop: true,
-            // 如果需要分页器
-            pagination: '.swiper-pagination',
-            autoplay: 3000,
-            autoplayDisableOnInteraction: false,
-
-            // 如果需要前进后退按钮
-//            nextButton: '.swiper-button-next',
-//            prevButton: '.swiper-button-prev',
-
-            // 如果需要滚动条
-//            scrollbar: '.swiper-scrollbar',
-        })
-
-        tabNav();
-        onTop();
-        switchFllow()
-        //页签切换
-        function tabNav() {
-            $('.shopList>li').click(function () {
-                $(this).siblings().removeClass('activeShowItem')
-                $(this).addClass('activeShowItem')
+//                setArticle(curPageData);
                 if($('.shopList>li:eq(0)').hasClass('activeShowItem')){
-//                $('.personArticle').show()
-                    $('.shopCase').hide().next().show()
+//                    alert('文章列表')
+                    //设置文章列表数据
+                    setArticle(curPageData);
                 }else if($('.shopList>li:eq(1)').hasClass('activeShowItem')){
-                    $('.personArticle').hide().prev().show()
-//                $('.shopCase').show()
+//                    alert('日记列表')
+//                    设置日记列表数据
+                    setShopCase(curPageData);
                 }
 
-            })
+            }, function(){
+                //联网失败的回调,隐藏下拉刷新和上拉加载的状态;
+                mescroll.endErr();
+            });
         }
+        /*设置列表数据*/
+        function setArticle(curPageData){
+            console.log(curPageData.length)
+            var listDom=document.getElementById("dataList");
+            for (var i = 0; i < curPageData.length; i++) {
+                var pd=curPageData[i];
+                var str ='<div class="articleWrapper">';
+                 str +=' <div class="userHeader">'+
+                        '<div class="userImg">'+
+                        '<img src="../images/userImg01.png" alt="">'+
+                        '</div>'+
+                        '<p class="userMessage">那样最年华 </p>'+
+                        '<p class="userText">美容达人 </p>'+
+                        '<div class="follow">'+
+                        '<span class="followImg"><img src="../images/btn_one_n@2x.png" alt=""></span>'+
+                        '<span class="fllowTest">关注</span>'+
+                        '</div>'+
+                        '</div>';
+                str += '<div class="userTitle">最爱手作—滴胶与木头标题就一行超过就标题就一行超过就 </div>';
+                str += '<div class="userText clearfix"><p class="userTextLeft">为你我用了半年的积蓄，漂洋过海的来看你记忆总是慢慢慢慢的堆积在脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也脑海里，也曾相互偎倚,也</p>'+
+                        '<div class="userPro userProShow"> <span class="iconCom iconLink"></span><span class="userProName">泰妍雅集套装</span></div><div class="view viewP"> <img src="../images/icon_browse@2x.png" alt=""> <span class="viewNum">2.16万 </span></div>'+
+                        '<div class="userTextRight"><img src="../images/userShowImg.png" alt=""><span class="imgNum">3张图片</span></div></div>';
+                str += ' <div class="shade" style="display: none">' +
+                        '<div class="flexslider "> ' +
+                        '<ul class="slides"> ' +
+                        '<li class="images"><div><img src="../images/articlePhoto01.jpg" /></div></li> ' +
+                        '<li class="images"><div><img src="../images/articlePhoto02.jpg" /></div></li> ' +
+                        '<li class="images"><div><img src="../images/articlePhoto03.jpg" /></div></li> ' +
+                        '<li class="images"><div><img src="../images/article02.png" /></div></li> ' +
+                        '</ul> ' +
+                        '</div> ' +
+                        '</div> ' +
+                        '</div>';
+                var liDom=document.createElement("li");
+                liDom.innerHTML=str;
+                listDom.appendChild(liDom);
+
+            }
+        }
+        function setShopCase(curPageData) {
+            console.log(curPageData.length)
+            var listDom = document.getElementById("dataList");
+            for (var i = 0; i < curPageData.length; i++) {
+                var pd = curPageData[i];
+
+                var str =' <div class="userList">';
+                str +=' <div class="userHeader clearfix"> ' +
+                        '<div class="userImg"> ' +
+                        '<img src="../images/userImg01.png" alt=""> ' +
+                        '</div> ' +
+                        '<p class="userMessage">天使BAB<img src="../images/icon_grade-level@2x.png" alt=""><span class="levelNum">2</span></p> ' +
+                        '<p class="userText">一分钟前</p> ' +
+                        '<div class="follow"> ' +
+                        '<span class="followImg"><img src="../images/btn_one_n@2x.png" alt=""></span> ' +
+                        '<span class="fllowTest">关注</span> ' +
+                        '</div> ' +
+                        '</div>';
+                str +=' <div class="userPhoto clearfix"> ' +
+                        '<div class="left"> ' +
+                        '<img src="../images/userBefore.png" alt=""> ' +
+                        '<div class="before">Before </div> ' +
+                        '</div> ' +
+                        '<div class="right"> ' +
+                        '<img src="../images/userAfter.png" alt=""> ' +
+                        '<div class="after">After </div> ' +
+                        '</div> ' +
+                        '</div>';
+                str +=' <div class="userComment">' +
+                        '不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！ ' +
+                        '</div>';
+                str +=' <div class="userPro"> ' +
+                        '<span class="iconCom"></span> ' +
+                        '<span class="userProName">泰妍雅集丰韵套装</span> ' +
+                        '</div>';
+                str +='<div class="attention"> ' +
+                        '<div class="view"> ' +
+                        '<img src="../images/icon_browse@2x.png" alt=""> ' +
+                        '<span class="viewNum">2.16万</span> ' +
+                        '</div> ' +
+                        '<div class="support"> ' +
+                        '<img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt=""> ' +
+                        '<span class="viewNum">2.16万</span> ' +
+                        '</div> ' +
+                        '<div class="comment"> ' +
+                        '<img src="../images/icon_comment@2x.png" alt=""> ' +
+                        '<span class="viewNum">2.16万</span> ' +
+                        '</div> ' +
+                        '</div>';
+                str += '</div>';
+                var liDom = document.createElement("li");
+                liDom.innerHTML = str;
+                listDom.appendChild(liDom);
+
+            }
+        }
+        /*联网加载列表数据*/
+        function getListDataFromNet(pdType,pageNum,pageSize,successCallback,errorCallback) {
+            //延时一秒,模拟联网
+            setTimeout(function () {
+               /* $.ajax({
+                    type: 'GET',
+                    url: 'http://wx.axingxing.com/activity/Activity/commentlist.html?id=1',
+                    dataType: 'json',
+                    success: function(data){*/
+//                        console.log(data)
+//                        alert(data.msg)
+                        var data=pdlist1; //模拟数据: ../js/pdlist1.js
+                        var listData=[];
+                        //pdType 全部商品0; 奶粉1; 面膜2; 图书3;
+                        if(pdType==0){
+                            //全部商品 (模拟分页数据)
+                            for (var i = (pageNum-1)*pageSize; i < pageNum*pageSize; i++) {
+                                if(i==data.length) break;
+                                listData.push(data[i]);
+                                console.log(data[i])
+                                console.log(typeof data[i])
+                            }
+                        }else if(pdType==1){
+                            //奶粉
+                            for (var i = 0; i < data.length; i++) {
+                                if (data[i].pdName.indexOf("奶粉")!=-1) {
+                                    listData.push(data[i]);
+                                }
+                            }
+                        }else if(pdType==2){
+                            //面膜
+                            for (var i = 0; i < data.length; i++) {
+                                if (data[i].pdName.indexOf("面膜")!=-1) {
+                                    listData.push(data[i]);
+                                }
+                            }
+                        }else if(pdType==3){
+                            //图书
+                            for (var i = 0; i < data.length; i++) {
+                                if (data[i].pdName.indexOf("图书")!=-1) {
+                                    listData.push(data[i]);
+                                }
+                            }
+                        }
+                        //回调
+                        successCallback(listData);
+
+           /*         },
+                    error: errorCallback
+                });*/
+            },1000)
+        }
+        /*初始化菜单*/
+        var pdType=0;//全部商品一次排列分别是：0,1,2,3,4,5,6......
+        $(".shopList li").click(function(){
+            var i=$(this).attr("i");
+            if(pdType!=i) {
+                //更改列表条件
+                pdType=i;
+                $(".shopList .activeShowItem").removeClass("activeShowItem");
+                $(this).addClass("activeShowItem");
+                //重置列表数据
+                mescroll.resetUpScroll();
+            }
+        })
+        /******************************************************************************************/
         //navTab置顶
+        onTop();
         function onTop() {
             $(window).scroll(function () {
                 var navTop = $('.fixHeight').offset().top
@@ -705,106 +429,54 @@
                 }
             })
         }
+        /*阻止移动端默认行为*/
+        function handler() {
+            event.preventDefault();
+        }
+        /*点击文章小图 展示大图*/
+        $('#dataList').on('click','.shade',function () {
+//                alert('大哥，你出来吧！')
+            console.log(this)
+            $(this).fadeOut('slow')
+            $('body','html').css({'height':'100%','overflow':'visible'})
+            /*解绑默认行为*/
+            document.removeEventListener('touchmove', handler, false);
+        })
+        $('#dataList').on('click','.userTextRight',function () {
+//                $(this).parent().parent().find('.flexslider ')
+            $(this).parent().parent().find('.flexslider ').flexslider({
+                animation: "slide",
+                directionNav: false,
+                controlNav: false,               // Boolean: 是否创建控制点
+                directionNav: false,
+                animationLoop: false,
+                slideshow: false,
+            });
+            console.log(this)
+//                $('.shade').fadeIn('slow')
+            $(this).parent().parent().find('.shade').fadeIn('slow')
+            /*大图展示的时候禁用滚动条*/
+            $('body','html').css({'height':'100%','overflow':'hidden'})
+            /* $('.bigPhotoShow').fadeIn('fast')*/
+            /*阻止移动端默认行为*/
+            document.addEventListener('touchmove', handler, false);
+        })
+
         //切换关注
+        switchFllow()
         function switchFllow() {
-            $('.follow').click(function () {
-//                alert('hello')
+            $('#dataList').on('click','.follow',function () {
                 $(this).css({'color':'#999999','width':'2.453333333333333rem','border':'1px solid #999'})
                 $(this).find('img').attr({src:'../images/btn_Concern@2x.png'})
                 $(this).find('.fllowTest').text('已关注')
             })
         }
-        //头部变化效果 此功能wap端不需要
-        headAnima()
-        function headAnima() {
-            $(window).scroll(function () {
-//                console.log($(window).scrollTop())
-                var scrollTop = $(window).scrollTop();
-                console.log(scrollTop)
-                var m = scrollTop/150
-                var n = Math.abs(150/(scrollTop+1))
-                $('.navShopGray').css({'opacity':m})
-                $('.navShop').css({'opacity':n})
-
-
-               /* if(scrollTop>40){
-                    $('.navShop').hide()
-                }else if(scrollTop<40){
-                    $('.navShop').show()
-                }*/
+        switchPerFollow()
+        function switchPerFollow() {
+            $('.personFollow').click(function () {
+                $(this).text('已关注')
             })
         }
-
-        //        点击文章小图 展示大图
-        var mySwiper06 = new Swiper('.swiper06', {
-            direction: 'horizontal',
-            initialSlide :1,
-            observer:true,//修改swiper自己或子元素时，自动初始化swiper
-            observeParents:true,//修改swiper的父元素时，自动初始化swiper
-        })
-
-        //        阻止移动端默认行为
-        function handler() {
-            event.preventDefault();
-        }
-        switchBigPhoto()
-        function switchBigPhoto() {
-            $('.userTextRight').click(function () {
-//               每次点击自动跳转到第一张图
-                mySwiper06.slideTo(0, 1000, false);
-//                大图展示的时候禁用滚动条
-                $('body','html').css({'height':'100%','overflow':'hidden'})
-
-                $('.bigPhotoShow').fadeIn('fast')
-//                阻止移动端默认行为
-                document.addEventListener('touchmove', handler, false);
-
-            })
-
-            $('.bigPhotoShow,.swiper06>.swiper-slide').click(function () {
-
-                $('.bigPhotoShow').fadeOut('slow')
-                //解绑默认行为
-                document.removeEventListener('touchmove', handler, false);
-
-//                大图消失使用滚动条
-                $('body','html').css({'height':'100%','overflow':'visible'})
-            })
-
-
-
-            /*            var userText = document.getElementById('userText')
-             var bigPhoto = document.getElementById('bigPhoto')
-             /!*userText.addEventListener('touchstart',function () {
-             alert('hello')
-             })*!/
-
-             userText.addEventListener('touchstart', function () {
-             //               每次点击自动跳转到第一张图
-             mySwiper06.slideTo(0, 1000, false);
-             //                大图展示的时候禁用滚动条
-             $('.bigPhotoShow').show()
-             })
-
-
-             bigPhoto.addEventListener('touchstart', function () {
-             $('body','html').css({'height':'100%','overflow':'hidden'})
-             //                alert('hello')
-             })
-
-
-
-
-             $('.bigPhotoShow,.swiper06>.swiper-slide').addEventListener('touchstart',function () {
-             $('.bigPhotoShow').hide()
-             //                大图消失使用滚动条
-             $('body','html').css({'height':'100%','overflow':'visible'})
-             })*/
-
-
-
-        }
-
     })
 </script>
 </body>

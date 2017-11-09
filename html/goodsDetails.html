@@ -364,7 +364,7 @@
                 </p>
                 <ul class="imageShow clearfix">
                     <li class="imageItem">
-                        <img src="../images/imageShow01.png" alt="">
+                        <img src="../images/shopHomePage.jpg" alt="">
                     </li>
                     <li class="imageItem">
                         <img src="../images/imageShow01.png" alt="">
@@ -760,6 +760,7 @@
 <script type="text/javascript" src="../js/rem.js"></script>
 <script type="text/javascript" src="../js/jquery.min.js"></script>
 <script type="text/javascript" src="../js/swiper-3.4.2.jquery.min.js"></script>
+<script type="text/javascript" src="../js/jquery.photoswipe-global.js"></script>
 <!--<script type="text/javascript" src="../js/active.js"></script>-->
 <script type="text/javascript">
     $(document).ready(function () {
@@ -778,8 +779,6 @@
             // 如果需要滚动条
 //            scrollbar: '.swiper-scrollbar',
         })
-
-
         //navtab置顶
         onTop()
         function onTop() {
@@ -910,6 +909,24 @@
         function shopcarShow() {
             $('.shopCarBox').hide()
             $('.goTop').css({'bottom':'5.546666666666667rem'})
+        }
+        /*判断是否有预约金*/
+        isReserve()
+        function isReserve() {
+            $('.reserve').hide()
+            $('.proDeWrapper').addClass('isReserve')
+        }
+        // 查看图片
+        gallery()
+        function gallery(){
+            $('.imageShow').photoSwipe('.imageItem', {bgOpacity: 1, shareEl: false,loop:false}, {
+                close: function () {
+                    setTimeout(function(){
+                        $('.pswp').attr("class","pswp ");
+                    },500);
+
+                }
+            });
         }
 
     })

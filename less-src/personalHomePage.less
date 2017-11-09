@@ -59,8 +59,8 @@ body {
 .personHome .personPage{
   width: 100%;
   height: 550/@rem;
-  background: url("../images/personalHome.jpg") center no-repeat;
-  background-size: 100%;
+  /*background: url("../images/personalHome.jpg") center no-repeat;*/
+  //background-size: 100%;
   filter: blur(5px);
 }
 .personHome .shade{
@@ -82,8 +82,8 @@ body {
   margin: 0 auto;
   margin-top: 150/@rem;
   overflow: hidden;
-  background: url("../images/personalHome.jpg") center no-repeat;
-  background-size: cover;
+  //background: url("../images/personalHome.jpg") center no-repeat;
+  //background-size: cover;
 }
 .personHome .shade .personName{
   font-size: 28/@rem;
@@ -209,6 +209,7 @@ body {
   height: 25/@rem;
   //width: 100%;
   vertical-align: top;
+  margin-right: 10/@rem;
 }
 .userList .userHeader .userMessage .levelNum{
   color: #ef508d;
@@ -342,6 +343,7 @@ body {
 .userList{
   box-sizing: border-box;
   padding: 0 30/@rem;
+  border-bottom: 10/@rem solid #f3f3f3;
 }
 .userHeader{
   //background-color: #bfa;
@@ -354,10 +356,12 @@ body {
   width: 60/@rem;
   height: 60/@rem;
   border-radius: 50%;
-  background-image: url("../images/userImg01.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
   float: left;
+  img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
 }
 .userHeader .userMessage{
   font-size: 28/@rem;
@@ -367,7 +371,6 @@ body {
   margin-left: 80/@rem;
   margin-bottom: 10/@rem;
 }
-
 .userHeader .userMessage img{
   width: 25/@rem;
   height: 25/@rem;
@@ -425,10 +428,13 @@ body {
   background-color: red;
 }
 .userPhoto .left{
-  background: url("../images/userBefore.png") center no-repeat;
-  background-size: 100%;
   float: left;
   position: relative;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 .userPhoto .left .before,
 .userPhoto .right .after{
@@ -447,9 +453,12 @@ body {
 }
 .userPhoto .right{
   position: relative;
-  background: url("../images/userAfter.png") center no-repeat;
-  background-size: 100%;
   float: right;
+  overflow: hidden;
+  img{
+    width: 100%;
+    height: 100%;
+  }
 }
 .userPhoto .right .after{
 
@@ -503,20 +512,14 @@ body {
   font-size: 26/@rem;
   color: #B8B8B8;
 }
-.userShow{
+
+.articleWrapper{
   box-sizing: border-box;
   padding: 0 30/@rem;
   height: 415/@rem;
   border-bottom: 10/@rem solid #EEEEEE;
 }
-/*.userShow .userHeader .follow .fllowTest{
-  color: #999999;
-}
-.userShow .userHeader .follow{
-  width: 115/@rem;
-  border: 1px solid #999;
-}*/
-.userShow .userTitle{
+.articleWrapper .userTitle{
   font-size: 34/@rem;
   color: #000000;
   white-space: nowrap;
@@ -525,21 +528,21 @@ body {
   line-height: 34/@rem;
   margin: 35/@rem 0 30/@rem 0;
 }
-.userShow .userText{
+.articleWrapper .userText{
   position: relative;
   //height: 265/@rem;
 }
-.userShow .userText .viewP{
+.articleWrapper .userText .viewP{
   position: absolute;
   right: 240/@rem;
   bottom: -60/@rem;
 }
-.userShow .userText .userProShow{
+.articleWrapper .userText .userProShow{
   position: absolute;
   left: 0;
   bottom: -60/@rem;
 }
-.userShow .userText .userTextLeft{
+.articleWrapper .userText .userTextLeft{
   font-size: 26/@rem;
   color: #999;
   width: 450/@rem;
@@ -555,30 +558,67 @@ body {
   -webkit-box-orient: vertical;
   float: left;
 }
-.userShow .userText .iconLink{
+.articleWrapper .userText .iconLink{
   background: url("../images/btn_Article-links@2x.png") no-repeat;
   background-size: 100%;
 }
-.userShow .userTextRight{
+.articleWrapper .userTextRight{
   width: 200/@rem;
   height: 200/@rem;
-  background: url("../images/userShowImg.png") no-repeat;
-  background-size: 100%;
+  /*  background: url("../images/userShowImg.png") no-repeat;
+    background-size: 100%;*/
   border-radius: 8/@rem;
   //float: right;
   position: absolute;
   top: 0;
   right: 0;
 }
-.userShow .userTextRight .imgNum{
+.articleWrapper .userTextRight img{
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.articleWrapper .userTextRight .imgNum{
   font-size: 26/@rem;
   color: #ffffff;
   position: absolute;
   right: 10/@rem;
   bottom: 10/@rem;
 }
+/*底部loading图*/
+.loadingImg{
+  width: 100%;
+  height: 220/@rem;
+  font-size: 24/@rem;
+  color: #000000;
+  line-height: 220/@rem;
+  //display: block;
+  background-color:#F3F3F3 ;
+  text-align: center;
+}
+.loadingImg img{
+  width: 110/@rem;
+  vertical-align: middle;
+}
+.Swiper04{
+  li{
+    display: inline;
+  }
+}
+
+.mescroll-downwarp .downwarp-tip, .mescroll-upwarp .upwarp-tip, .mescroll-upwarp .upwarp-nodata {
+  width: 100%;
+  line-height: 120/@rem;
+  display: inline-block;
+  font-size: 24/@rem;
+  color: #666666;
+  text-align: center;
+  //vertical-align: middle
+  background-color: #F3F3F3;
+}
 //切换大图
-.swiper06 .swiper-wrapper .swiper-slide img{
+
+.bigPhotoShow .swiper-wrapper .swiper-slide img{
   width: 100%;
 }
 .bigPhotoShow{
@@ -592,7 +632,7 @@ body {
   display: flex;
   align-items: center;
 }
-.swiper06 .swiper-wrapper{
+.bigPhotoShow .swiper-wrapper{
   height: 100%;
   display: flex;
   align-items: center;
@@ -602,4 +642,38 @@ body {
       display: inline-block;
     }
   }
+}
+
+.flex-viewport,.slides,.images{
+  height: 100%;
+}
+.shade{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 1000;
+  /*display: none;*/
+
+
+}
+.shade .flexslider{
+  /*margin-top: 30%;*/
+  height: 100%;
+}
+.shade .flexslider .images img{
+
+
+}
+.flexslider {
+  background:none;
+  border: none;
+}
+.shade .flexslider .slides li{
+  display: flex!important;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
