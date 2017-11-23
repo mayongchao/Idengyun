@@ -24,6 +24,79 @@
   float: right;
   margin-right: 0.8533333333333334rem;
 }
+.swiper10 {
+  position: relative;
+}
+/*轮播遮罩*/
+.soldout:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(../images/saleout.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+.soldend:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(../images/soldEnd.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+.nogoods:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  background-image: url(../images/noGoods.png);
+  background-position: center;
+  background-size: 40%;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+.proCase {
+  position: relative;
+}
+.whoBuyList {
+  position: relative;
+}
+.shopDetail {
+  position: relative;
+}
+.emptyPage:before {
+  font-size: 0.64rem;
+  color: #717171;
+  text-align: center;
+  line-height: 29.866666666666667rem;
+  content: '暂无内容';
+  position: absolute;
+  left: 0;
+  top: 0.08533333333333333rem;
+  width: 100%;
+  height: 26.666666666666668rem;
+  background-color: #FFFFFF;
+  background-image: url(../images/empty_usual@2x.png);
+  background-position: center 9.6rem;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  z-index: 1;
+}
 .swiper10 .swiper-wrapper .swiper-slide img {
   width: 100%;
 }
@@ -357,7 +430,7 @@
 }
 .activeShowItem {
   font-size: 0.64rem;
-  color: #ef508d!important;
+  color: #ef508d !important;
   border-bottom: 0.08533333333333333rem solid #ef508d;
 }
 .goodsDetail {
@@ -531,8 +604,8 @@
   height: 1.28rem;
   border-radius: 50%;
   /*  background-image: url("../images/userImg01.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;*/
+    background-repeat: no-repeat;
+    background-size: 100% 100%;*/
   float: left;
   overflow: hidden;
 }
@@ -560,7 +633,7 @@
 }
 .userHeader .userText {
   font-size: 0.5973333333333334rem;
-  color: #999999 ;
+  color: #999999;
   margin-left: 1.7066666666666668rem;
 }
 .userHeader .follow {
@@ -623,7 +696,7 @@
 }
 .userComment {
   font-size: 0.5973333333333334rem;
-  color: #8C8C8C ;
+  color: #8C8C8C;
   margin-top: 0.5333333333333333rem;
   margin-bottom: 0.5333333333333333rem;
   line-height: 0.8106666666666666rem;
@@ -707,7 +780,7 @@
 }
 .userListHeader .userHeader .userText {
   font-size: 0.512rem;
-  color: #999999 ;
+  color: #999999;
   margin-left: 1.7066666666666668rem;
 }
 .userListHeader .userHeader .follow {
@@ -1343,4 +1416,22 @@ i.active {
 .coupon-detail .property-main::-webkit-scrollbar {
   display: none;
   opacity: 0;
+}
+.attentioned {
+  position: absolute;
+  right: 0;
+  top: 0.23466666666666666rem;
+  font-size: 0.4693333333333333rem;
+  color: #999999;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #dedede;
+  display: inline-block;
+  float: right;
+  line-height: 0.8533333333333334rem;
+  width: 2.432rem;
+  text-align: center;
+}
+.attentioned img {
+  width: 0.3413333333333333rem;
 }

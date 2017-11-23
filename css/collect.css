@@ -63,14 +63,20 @@
 .collUserItem .collHeader {
   width: 2.7733333333333334rem;
   height: 2.7733333333333334rem;
-  background: url("../images/collectHeader.png") center no-repeat;
-  background-size: cover;
+  /*  background: url("../images/collectHeader.png") center no-repeat;
+  background-size: cover;*/
   float: left;
+  overflow: hidden;
+}
+.collUserItem .collHeader img {
+  width: 100%;
+  height: 100%;
 }
 .collUserItem .collText {
   margin-left: 3.4133333333333336rem;
 }
 .collUserItem .collText .textTop {
+  height: 1.7493333333333334rem;
   font-size: 0.64rem;
   color: #1c1c1e;
   overflow: hidden;

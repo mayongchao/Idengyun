@@ -14,13 +14,13 @@
 <body>
     <div class="proDeWrapper">
         <!--项目详情导航栏-->
-        <div class="navShop">
+       <!-- <div class="navShop">
             <img src="../images/btn_nav_back_s@2x.png" alt="" class="iconBack">
             <img src="../images/btn_nav_more_s@2x.png" alt="" class="iconMore">
             <img src="../images/btn_nav_share_s@2x.png" alt="" class="iconShare">
-        </div>
+        </div>-->
         <!--项目详情轮播图-->
-        <div class="swiper10 swiper-container">
+        <div class="swiper10 swiper-container nogoods">
             <ul class="swiper-wrapper">
                 <li class="swiper-slide">
                     <a href="javascript:;">
@@ -185,8 +185,8 @@
                 </div>
             </div>
             <!--相关案例-->
-            <ul class="proCase" style="display: none">
-                <li class="userList">
+            <ul class="proCase emptyPage" style="display: none">
+                <!--<li class="userList">
                     <div class="userHeader clearfix">
                         <div class="userImg">
                             <img src="../images/userImg01.png" alt="">
@@ -202,11 +202,15 @@
                         <p class="userText">
                             一分钟前
                         </p>
-                        <div class="follow">
-            <span class="followImg">
-                <img src="../images/btn_one_n@2x.png" alt="">
-            </span>
+                        <div class="follow" style="display: none">
+                            <span class="followImg">
+                                <img src="../images/btn_one_n@2x.png" alt="">
+                            </span>
                             <span class="fllowTest">关注</span>
+                        </div>
+                        <div class="attentioned" style="">
+                            <img src="../images/btn_Concern@2x.png" alt="">
+                            已关注
                         </div>
                     </div>
                     <div class="userPhoto clearfix">
@@ -225,7 +229,7 @@
                         不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
                     </div>
                     <div class="userPro">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
+                        &lt;!&ndash;<img src="../images/icon_Commodity-link@2x.png" alt="">&ndash;&gt;
                         <span class="iconCom"></span>
                         <span class="userProName">
             泰妍雅集丰韵套装
@@ -233,21 +237,21 @@
                     </div>
                     <div class="attention">
                         <div class="view">
-                            <!--<span class="viewImg"></span>-->
+                            &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                             <img src="../images/icon_browse@2x.png" alt="">
                             <span class="viewNum">
                     2.16万
                 </span>
                         </div>
                         <div class="support">
-                            <!--<span class="viewImg"></span>-->
+                            &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                             <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
                             <span class="viewNum">
                     2.16万
                 </span>
                         </div>
                         <div class="comment">
-                            <!--<span class="viewImg"></span>-->
+                            &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                             <img src="../images/icon_comment@2x.png" alt="">
                             <span class="viewNum">
                     2.16万
@@ -294,7 +298,7 @@
                         不知道下一次超声刀是什么时候，眼镜都看不见了啊真 变得太厉害了，我要当天山童姥！！！
                     </div>
                     <div class="userPro">
-                        <!--<img src="../images/icon_Commodity-link@2x.png" alt="">-->
+                        &lt;!&ndash;<img src="../images/icon_Commodity-link@2x.png" alt="">&ndash;&gt;
                         <span class="iconCom"></span>
                         <span class="userProName">
             泰妍雅集丰韵套装
@@ -302,28 +306,28 @@
                     </div>
                     <div class="attention">
                         <div class="view">
-                            <!--<span class="viewImg"></span>-->
+                            &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                             <img src="../images/icon_browse@2x.png" alt="">
                             <span class="viewNum">
                     2.16万
                 </span>
                         </div>
                         <div class="support">
-                            <!--<span class="viewImg"></span>-->
+                            &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                             <img src="../images/icon_Give%C2%A0the%C2%A0thumbs-up@2x.png" alt="">
                             <span class="viewNum">
                     2.16万
                 </span>
                         </div>
                         <div class="comment">
-                            <!--<span class="viewImg"></span>-->
+                            &lt;!&ndash;<span class="viewImg"></span>&ndash;&gt;
                             <img src="../images/icon_comment@2x.png" alt="">
                             <span class="viewNum">
                     2.16万
                 </span>
                         </div>
                     </div>
-                </li>
+                </li>-->
             </ul>
             <!--看谁买了-->
             <ul class="whoBuyList" style="display: none">
@@ -789,7 +793,7 @@
                 if(top > navTop){
                     $('.DetailNav').css({'position':'fixed','top':'0','left':'0','z-index':'10000'})
                 }else if(navTop>top){
-                    $('.DetailNav').css({'position':'static'})
+                    $('.DetailNav').css({'position':'relative'})
                 }
             })
         }

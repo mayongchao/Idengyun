@@ -493,8 +493,6 @@
   justify-content: space-around;
   background-color: #ffffff;
   border-bottom: 0.042666666666666665rem solid #eeeeee;
-  /*  height: 2/@rem;
-  background-color: #eeeeee;*/
 }
 .shopList .shopItem {
   font-size: 0.64rem;
@@ -761,6 +759,24 @@
 /*.myShopPro{
   padding-bottom: 120/@rem;
 }*/
+.attentioned {
+  position: absolute;
+  right: 0;
+  top: 0.23466666666666666rem;
+  font-size: 0.4693333333333333rem;
+  color: #999999;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #dedede;
+  display: inline-block;
+  float: right;
+  line-height: 0.8533333333333334rem;
+  width: 2.432rem;
+  text-align: center;
+}
+.attentioned img {
+  width: 0.3413333333333333rem;
+}
 .shopProject {
   box-sizing: border-box;
   padding: 0.64rem 0.64rem 0.2986666666666667rem 0.64rem;
@@ -953,4 +969,32 @@
 .loadingImg img {
   width: 2.3466666666666667rem;
   vertical-align: middle;
+}
+/*空页面*/
+.shopCase {
+  position: relative;
+}
+.myShopPro {
+  position: relative;
+}
+.myShopTechGrou {
+  position: relative;
+}
+.emptyPage:before {
+  font-size: 0.64rem;
+  color: #717171;
+  text-align: center;
+  line-height: 29.866666666666667rem;
+  content: '暂无内容';
+  position: absolute;
+  left: 0;
+  top: 0.08533333333333333rem;
+  width: 100%;
+  height: 26.666666666666668rem;
+  background-color: #FFFFFF;
+  background-image: url(../images/empty_usual@2x.png);
+  background-position: center 9.6rem;
+  background-size: 30%;
+  background-repeat: no-repeat;
+  z-index: 1;
 }

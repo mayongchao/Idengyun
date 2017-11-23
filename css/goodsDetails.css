@@ -448,17 +448,28 @@
   margin: 0.384rem auto;
 }
 .footer .collect {
-  width: 4.586666666666667rem;
+  width: 3.3066666666666666rem;
   height: 2.56rem;
   font-size: 0.5546666666666666rem;
+  line-height: 3.6266666666666665rem;
   color: #666666;
-  background-color: #ffffff;
   text-align: center;
+  background: url("../images/btn_icon_collected@2x.png") no-repeat;
+  background-position: center 0.4266666666666667rem;
+  background-size: 0.8533333333333334rem;
+  background-color: #ffffff;
 }
-.footer .collect img {
-  width: 0.8533333333333334rem;
-  display: block;
-  margin: 0.384rem auto;
+.footer .active {
+  width: 3.3066666666666666rem;
+  height: 2.56rem;
+  font-size: 0.5546666666666666rem;
+  line-height: 3.6266666666666665rem;
+  color: #ef508d;
+  text-align: center;
+  background: url("../images/btn_icon_Havebeencollected@2x.png") no-repeat;
+  background-position: center 0.4266666666666667rem;
+  background-size: 0.8533333333333334rem;
+  background-color: #ffffff;
 }
 .footer .buyNow {
   width: 6.826666666666667rem;
@@ -493,15 +504,31 @@
   width: 3.3066666666666666rem;
   height: 2.56rem;
   font-size: 0.5546666666666666rem;
+  line-height: 3.6266666666666665rem;
   color: #666666;
-  background-color: #ffffff;
   text-align: center;
+  background: url("../images/btn_icon_collected@2x.png") no-repeat;
+  background-position: center 0.4266666666666667rem;
+  background-size: 0.8533333333333334rem;
+  background-color: #ffffff;
 }
-.goodsFooter .collect img {
-  width: 0.8533333333333334rem;
+.goodsFooter .active {
+  width: 3.3066666666666666rem;
+  height: 2.56rem;
+  font-size: 0.5546666666666666rem;
+  line-height: 3.6266666666666665rem;
+  color: #ef508d;
+  text-align: center;
+  background: url("../images/btn_icon_Havebeencollected@2x.png") no-repeat;
+  background-position: center 0.4266666666666667rem;
+  background-size: 0.8533333333333334rem;
+  background-color: #ffffff;
+}
+/*.goodsFooter .collect img{
+  width: 40/@rem;
   display: block;
-  margin: 0.384rem auto;
-}
+  margin: 18/@rem auto;
+}*/
 .goodsFooter .intoShopCart {
   width: 4.693333333333333rem;
   height: 2.56rem;

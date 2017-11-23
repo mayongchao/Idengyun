@@ -633,10 +633,13 @@
   background-color: red;
 }
 .userList .userPhoto .left {
-  background: url("../images/userBefore.png") center no-repeat;
-  background-size: 100%;
   float: left;
   position: relative;
+  overflow: hidden;
+}
+.userList .userPhoto .left img {
+  width: 100%;
+  height: 100%;
 }
 .userList .userPhoto .left .before,
 .userList .userPhoto .right .after {
@@ -654,9 +657,12 @@
 }
 .userList .userPhoto .right {
   position: relative;
-  background: url("../images/userAfter.png") center no-repeat;
-  background-size: 100%;
   float: right;
+  overflow: hidden;
+}
+.userList .userPhoto .right img {
+  width: 100%;
+  height: 100%;
 }
 .userList .userComment {
   font-size: 0.5973333333333334rem;
@@ -921,4 +927,25 @@
   height: 0.5973333333333334rem;
   background: url("../images/startModule.png") left no-repeat;
   background-size: 3.7546666666666666rem 0.5973333333333334rem;
+}
+.shopCase {
+  margin-bottom: 2.88rem;
+}
+.attentioned {
+  position: absolute;
+  right: 0;
+  top: 0.23466666666666666rem;
+  font-size: 0.4693333333333333rem;
+  color: #999999;
+  border-radius: 0.4266666666666667rem;
+  background-color: #ffffff;
+  border: 0.042666666666666665rem solid #dedede;
+  display: inline-block;
+  float: right;
+  line-height: 0.8533333333333334rem;
+  width: 2.432rem;
+  text-align: center;
+}
+.attentioned img {
+  width: 0.3413333333333333rem;
 }
